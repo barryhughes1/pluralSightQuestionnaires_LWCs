@@ -1,0 +1,20 @@
+{
+  "name": "ps-lwc-prototyping",
+  "version": "1.0.0",
+  "description": "Pluralsight Course - Prototyping with Lightning Web Components",
+  "scripts": {
+    "build": "npm run create-scratch-org && npm run build-out-scratch-org",    
+    "reset": "npm run delete-old-scratch-org && npm run create-scratch-org && npm run build-out-scratch-org",    
+    "delete-old-scratch-org": "sfdx force:org:delete -p -u $SCRATCHORGNAME",
+    "create-scratch-org": "sfdx force:org:create -v $DEVHUB -s -f config/project-scratch-def.json -w 10 -a $SCRATCHORGNAME",
+    "build-out-scratch-org": "npm run push-source && npm run assign-questionnaires-app-permission-set && npm run import-questionnaires && npm run set-username-and-password && npm run get-org-user-details && npm run open-scratch-org",
+    "push-source": "sfdx force:source:push -u $SCRATCHORGNAME -f",
+    "assign-questionnaires-app-permission-set": "sfdx force:user:permset:assign -n Questionnaires",
+    "import-questionnaires": "sfdx force:data:tree:import -u $SCRATCHORGNAME -f data/Questionnaire__c-Questionnaire_Question__c.json",
+    "set-username-and-password": "sfdx force:user:password:generate -u $SCRATCHORGNAME",
+    "get-org-user-details": "sfdx force:org:display -u $SCRATCHORGNAME",
+    "open-scratch-org": "sfdx force:org:open -u $SCRATCHORGNAME"
+  },
+  "author": "Barry Hughes, Blue Wave Technology",
+  "license": "ISC"
+}

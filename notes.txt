@@ -1,0 +1,13 @@
+sfdx force:org:create -s -f config/project-scratch-def.json -a psScratchOrg1
+
+sfdx force:source:push
+
+sfdx force:user:permset:assign -n Questionnaires
+
+sfdx force:org:open -u psScratchOrg1
+
+sfdx force:data:tree:import --sobjecttreefiles data/Questionnaire__c-Questionnaire_Question__c.json -u psScratchOrg1
+
+
+
+sfdx force:data:tree:export -p -q "SELECT Name, Description__c, (SELECT Name, Questionnaire__c, QuestionNumber__c FROM Questions__r) FROM Questionnaire__c" -d ./data -u psScratchOrg1
