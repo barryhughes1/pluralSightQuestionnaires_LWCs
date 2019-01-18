@@ -1,0 +1,4 @@
+mkdir force-app/main/questionnaires
+
+sfdx force:lightning:component:create -n Questionnaire_list_lwc --type lwc -d force-app/main/questionnaires/lwc
+
