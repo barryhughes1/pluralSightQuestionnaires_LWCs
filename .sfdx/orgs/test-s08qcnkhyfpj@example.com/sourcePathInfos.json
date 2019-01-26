@@ -2,14 +2,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 128,
-            "modifiedTime": 1547837746000,
+            "modifiedTime": 1548464354000,
             "changeTime": 1547837748043,
             "contentHash": "51d86f3b64a3d9a0048d192f02147b0e9e9594e4",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": true
         }
@@ -17,14 +17,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 160,
-            "modifiedTime": 1547837746000,
+            "modifiedTime": 1548464353000,
             "changeTime": 1547837748071,
             "contentHash": "ebfa547b808333dcc6bffbe31122edfa1b0daff4",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -32,14 +32,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 224,
-            "modifiedTime": 1547837746000,
+            "modifiedTime": 1548464235000,
             "changeTime": 1547837748090,
             "contentHash": "a60cd3730d36ae44be9cf29168c8f8a4eec75739",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -47,14 +47,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/appMenus",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/appMenus",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 96,
             "modifiedTime": 1547250088000,
             "changeTime": 1547800016933,
             "contentHash": "d63b95c1594d93a3f01f26451804a38612303bb8",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -62,14 +62,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/appMenus/Salesforce1.appMenu-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/appMenus/Salesforce1.appMenu-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 1672,
             "modifiedTime": 1547250084233,
             "changeTime": 1547250084719,
             "contentHash": "9650658a1a8fbfebd3853b6f7628ca78e47c937a",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -77,14 +77,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/flexipages",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/flexipages",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 128,
             "modifiedTime": 1547796873000,
             "changeTime": 1547796875170,
             "contentHash": "f6c68fd38626b4587c8f58e03a2f74be88453862",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -92,14 +92,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/flexipages/Home_Page_Default.flexipage-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/flexipages/Home_Page_Default.flexipage-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 1724,
             "modifiedTime": 1546934044465,
             "changeTime": 1546934044960,
             "contentHash": "5ad279d276f26bbbbe7e155be8bb04ec32c708b5",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -107,14 +107,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/flexipages/Home_Page_Default1.flexipage-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/flexipages/Home_Page_Default1.flexipage-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 1849,
             "modifiedTime": 1547250084171,
             "changeTime": 1547250084171,
             "contentHash": "6d0a999e53f1b6afa0fbfd8bfa1aa630aad6b19b",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -122,14 +122,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/lwc",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/lwc",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 160,
-            "modifiedTime": 1547837352000,
+            "modifiedTime": 1548464235000,
             "changeTime": 1547837354708,
             "contentHash": "faff82b8edb19af39d7a6c08271b6498fd431a07",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -137,14 +137,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/lwc/helloWorld",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/lwc/helloWorld",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 160,
             "modifiedTime": 1546933791000,
             "changeTime": 1546933791142,
             "contentHash": "c4f5c53c9e3fa98e7b41f54b72a11b17045711fb",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -152,14 +152,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/lwc/helloWorld/helloWorld.html",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/lwc/helloWorld/helloWorld.html",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 311,
             "modifiedTime": 1546933732013,
             "changeTime": 1546933732013,
             "contentHash": "7370b68224894ea36930868027b9816896bb817c",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -167,14 +167,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/lwc/helloWorld/helloWorld.js",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/lwc/helloWorld/helloWorld.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 215,
             "modifiedTime": 1546933756542,
             "changeTime": 1546933756542,
             "contentHash": "3434a5c8686cb4c9fe4cb6b043a5b12a36c6b9d1",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -182,14 +182,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/lwc/helloWorld/helloWorld.js-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/lwc/helloWorld/helloWorld.js-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 369,
             "modifiedTime": 1546933787126,
             "changeTime": 1546933787126,
             "contentHash": "5096584b5c9a0e0e20d15d487c516c53bfd14862",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -197,14 +197,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/profiles",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/profiles",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 192,
             "modifiedTime": 1547837746000,
             "changeTime": 1547837748107,
             "contentHash": "9c367b0e719eb8c48c5b0d9cbfb5f580a4bd6717",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -212,14 +212,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/profiles/Admin.profile-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/profiles/Admin.profile-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 22691,
             "modifiedTime": 1547837697684,
             "changeTime": 1547837697684,
             "contentHash": "66244956033c8b6e7a3c40ede7d18cfb6b104f06",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -227,14 +227,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/profiles/Custom%3A Marketing Profile.profile-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/profiles/Custom%3A Marketing Profile.profile-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 7173,
             "modifiedTime": 1547837718106,
             "changeTime": 1547837718106,
             "contentHash": "5af1230638e8117ae4448f6f6e7a68184156629a",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -242,14 +242,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/profiles/Custom%3A Sales Profile.profile-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/profiles/Custom%3A Sales Profile.profile-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 7173,
             "modifiedTime": 1547837731697,
             "changeTime": 1547837731697,
             "contentHash": "5af1230638e8117ae4448f6f6e7a68184156629a",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -257,14 +257,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/profiles/Custom%3A Support Profile.profile-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/profiles/Custom%3A Support Profile.profile-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 7511,
             "modifiedTime": 1547837744393,
             "changeTime": 1547837744393,
             "contentHash": "9b1f741b60549adbc57089e0bb69065d723a7f0e",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -272,14 +272,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 384,
-            "modifiedTime": 1547837352000,
+            "modifiedTime": 1548464353000,
             "changeTime": 1547837354697,
             "contentHash": "a24764f1f757848847b6320655a1f1f0b5ccabe5",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -287,14 +287,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/applications",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/applications",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 96,
             "modifiedTime": 1547796795000,
             "changeTime": 1547837301610,
             "contentHash": "136305b640c26f89d15826f9e095c8aec34b1516",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -302,14 +302,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/applications/Questionnaires.app-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/applications/Questionnaires.app-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 681,
             "modifiedTime": 1547250084177,
             "changeTime": 1547250084177,
             "contentHash": "970317c8fe00d350fbaf2bd5a26f637b013ea0de",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -317,14 +317,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 256,
             "modifiedTime": 1547796810000,
             "changeTime": 1547837301612,
             "contentHash": "ba123d8950517c743937a9e2e19ffc03b4e4700b",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -332,14 +332,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 192,
             "modifiedTime": 1546847313000,
             "changeTime": 1546847313984,
             "contentHash": "dcf5ef40e507d5e3dbe65b24f9c66dff535b761f",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -347,14 +347,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire/Questionnaire.cmp",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire/Questionnaire.cmp",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 3805,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184940,
             "contentHash": "75570a95bb006d5f31d1fa8f91a283b977f76fcf",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -362,14 +362,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire/Questionnaire.cmp-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire/Questionnaire.cmp-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 228,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184943,
             "contentHash": "379d947ebfaf249a903d8b860a7dcc5904e5d4aa",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -377,14 +377,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire/QuestionnaireController.js",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire/QuestionnaireController.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 2061,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184946,
             "contentHash": "e949dfc1b8b56675e004ffc446e60f92197dc21e",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -392,14 +392,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire/QuestionnaireHelper.js",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire/QuestionnaireHelper.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 2268,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184949,
             "contentHash": "f7f2782b08be5b2ec39b668e7b6556c1fe255832",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -407,14 +407,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Answer",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Answer",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 192,
             "modifiedTime": 1546847313000,
             "changeTime": 1546847313979,
             "contentHash": "463738aadb2d70d2913cc44a9320904f9e19ae85",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -422,14 +422,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Answer/Questionnaire_Answer.cmp",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Answer/Questionnaire_Answer.cmp",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 6527,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184954,
             "contentHash": "967bce507fb0bc604ef0161b85bf44a396998df5",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -437,14 +437,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Answer/Questionnaire_Answer.cmp-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Answer/Questionnaire_Answer.cmp-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 228,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184957,
             "contentHash": "379d947ebfaf249a903d8b860a7dcc5904e5d4aa",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -452,14 +452,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Answer/Questionnaire_AnswerController.js",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Answer/Questionnaire_AnswerController.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 1596,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184960,
             "contentHash": "c84d5f037c1c30d160e7cccfe8da340a96a5b79e",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -467,14 +467,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Answer/Questionnaire_AnswerHelper.js",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Answer/Questionnaire_AnswerHelper.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 6917,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184963,
             "contentHash": "e818fd5afc6770f7bc140d9f965d7266b4315c10",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -482,14 +482,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Card",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Card",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 192,
             "modifiedTime": 1546847313000,
             "changeTime": 1546847313964,
             "contentHash": "17d35f39dca9bcb3f0fe51ed449dff4a63b5819e",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -497,14 +497,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Card/Questionnaire_Card.cmp",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Card/Questionnaire_Card.cmp",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 3252,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184967,
             "contentHash": "701203aee68755d46fb55e7c64de71ea5df19a08",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -512,14 +512,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Card/Questionnaire_Card.cmp-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Card/Questionnaire_Card.cmp-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 228,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184970,
             "contentHash": "379d947ebfaf249a903d8b860a7dcc5904e5d4aa",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -527,14 +527,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Card/Questionnaire_CardController.js",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Card/Questionnaire_CardController.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 1102,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184973,
             "contentHash": "c4dfa83c8d332024f7f8c3a98c2168c22676da1c",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -542,14 +542,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Card/Questionnaire_CardHelper.js",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_Card/Questionnaire_CardHelper.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 407,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184976,
             "contentHash": "d40d9b0b3e0ec4c3569ddda98e4cc4fc628052d6",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -557,14 +557,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 224,
             "modifiedTime": 1546847618000,
             "changeTime": 1546847618151,
             "contentHash": "4d125f1893599c962f94abb35bdc61f2acca2057",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -572,14 +572,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list/Questionnaire_list.cmp",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list/Questionnaire_list.cmp",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 2117,
             "modifiedTime": 1546736376527,
             "changeTime": 1546736376527,
             "contentHash": "77d3ce3bdcec713879813628f1f47f62e98fc223",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -587,14 +587,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list/Questionnaire_list.cmp-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list/Questionnaire_list.cmp-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 228,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184983,
             "contentHash": "379d947ebfaf249a903d8b860a7dcc5904e5d4aa",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -602,14 +602,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list/Questionnaire_list.css",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list/Questionnaire_list.css",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 37,
             "modifiedTime": 1546736376525,
             "changeTime": 1546736377335,
             "contentHash": "b3b944c3b9492703071fa47a653e9953150f8bf8",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -617,14 +617,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list/Questionnaire_listController.js",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list/Questionnaire_listController.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 284,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184986,
             "contentHash": "fd98d79711df09af8c1d7f00ee7e0aea94e1cb52",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -632,14 +632,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list/Questionnaire_listHelper.js",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list/Questionnaire_listHelper.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 2670,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184989,
             "contentHash": "765de0a07dd34e940d2dbaf3b4047e4a13f42488",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -647,14 +647,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list_app",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list_app",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 128,
             "modifiedTime": 1546847313000,
             "changeTime": 1546847313956,
             "contentHash": "799e9dcdecf5b6b3ca39d77a95949ae008eee65a",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -662,14 +662,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list_app/Questionnaire_list_app.app",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list_app/Questionnaire_list_app.app",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 88,
             "modifiedTime": 1545404738000,
             "changeTime": 1546845021124,
             "contentHash": "8c389e1286f39b471e9a8b0412e0ea537db62f44",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -677,14 +677,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list_app/Questionnaire_list_app.app-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/Questionnaire_list_app/Questionnaire_list_app.app-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 228,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729184997,
             "contentHash": "379d947ebfaf249a903d8b860a7dcc5904e5d4aa",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -692,14 +692,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/utilityFunctions",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/utilityFunctions",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 160,
             "modifiedTime": 1546847298000,
             "changeTime": 1546847298914,
             "contentHash": "75e45198a2ff6d819c79679025d7b8d36537974f",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -707,14 +707,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/utilityFunctions/utilityFunctions.cmp",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/utilityFunctions/utilityFunctions.cmp",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 71,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185001,
             "contentHash": "c32db115cb23a5832b3c4cda037130106b4189f2",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -722,14 +722,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/utilityFunctions/utilityFunctions.cmp-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/utilityFunctions/utilityFunctions.cmp-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 240,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185004,
             "contentHash": "8dfc1b33bd0223f6e7c1be801d09571719b53040",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -737,14 +737,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/utilityFunctions/utilityFunctionsHelper.js",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/aura/utilityFunctions/utilityFunctionsHelper.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 1999,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185006,
             "contentHash": "a847de1be8d983bf78da957c9f775f5da7a222da",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -752,14 +752,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/classes",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/classes",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 192,
             "modifiedTime": 1547796860000,
             "changeTime": 1547837301601,
             "contentHash": "dd7a7e986eb679c49a2f735f79a37718324329b2",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -767,14 +767,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/classes/Questionnaire_Controller.cls",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/classes/Questionnaire_Controller.cls",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 8319,
             "modifiedTime": 1545404737000,
             "changeTime": 1546729185011,
             "contentHash": "ddf49a5e64b85f7f188516c86a89599c3b93a81b",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -782,14 +782,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/classes/Questionnaire_Controller.cls-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/classes/Questionnaire_Controller.cls-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 174,
             "modifiedTime": 1545404737000,
             "changeTime": 1546729185014,
             "contentHash": "cb0f9f01e3f3aa0ea1a9985ea3caf2b33d167a49",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -797,14 +797,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/classes/populateSampleQuestionnaireRecords.cls",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/classes/populateSampleQuestionnaireRecords.cls",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 2929,
             "modifiedTime": 1545404737000,
             "changeTime": 1546729185017,
             "contentHash": "6e1173780e300826d2805ab1fd8de2798f3d611a",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -812,14 +812,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/classes/populateSampleQuestionnaireRecords.cls-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/classes/populateSampleQuestionnaireRecords.cls-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 174,
             "modifiedTime": 1545404737000,
             "changeTime": 1546729185019,
             "contentHash": "35384e5e44ad3af7451dabe011db908c07dc85cf",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -827,14 +827,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/flexipages",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/flexipages",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 96,
             "modifiedTime": 1547796873000,
             "changeTime": 1547837301603,
             "contentHash": "cce025ab871012d714f34f2324474ebc5087117e",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -842,14 +842,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/flexipages/Questionnaires_LWC.flexipage-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/flexipages/Questionnaires_LWC.flexipage-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 500,
             "modifiedTime": 1547796872636,
             "changeTime": 1547796872637,
             "contentHash": "15a571f13f75e39ce9202b75c82daaa8b39918d3",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -857,14 +857,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/layouts",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/layouts",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 96,
             "modifiedTime": 1547796847000,
             "changeTime": 1547837301608,
             "contentHash": "c7b9f4a3930ba5f7fd38b70268e3515cae917aeb",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -872,14 +872,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/layouts/Questionnaire__c-Questionnaire Layout.layout-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/layouts/Questionnaire__c-Questionnaire Layout.layout-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 2809,
             "modifiedTime": 1546736376531,
             "changeTime": 1546736377347,
             "contentHash": "cd3b86b04e1337ed6dc647dee9b56dc1db239d75",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -887,104 +887,28 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc",
             "isDirectory": true,
+            "size": 288,
+            "modifiedTime": 1548464353000,
+            "changeTime": 1548464265849,
+            "contentHash": "672221c0b10f9de35ecd5dcb796cb2d6dcfc8795",
             "isMetadataFile": false,
-            "size": 192,
-            "modifiedTime": 1547837352000,
-            "changeTime": 1547837354722,
-            "contentHash": "36a836f7ff6348420ab9602b1b2d636d73b02619",
-            "isWorkspace": false,
-            "isArtifactRoot": false
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/Questionnaire_list_lwc",
-        {
             "state": "u",
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/Questionnaire_list_lwc",
-            "isDirectory": true,
-            "isMetadataFile": false,
-            "size": 192,
-            "modifiedTime": 1547837112000,
-            "changeTime": 1547837113416,
-            "contentHash": "afd4cfd5032da74a96de6c55c6fc7deeb1231d3f",
-            "isWorkspace": false,
-            "isArtifactRoot": false
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/Questionnaire_list_lwc/Questionnaire_list_lwc.css",
-        {
-            "state": "u",
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/Questionnaire_list_lwc/Questionnaire_list_lwc.css",
-            "isDirectory": false,
-            "isMetadataFile": false,
-            "size": 37,
-            "modifiedTime": 1547250648002,
-            "changeTime": 1547250648002,
-            "contentHash": "174074112ce22f598e6a79e6cd71f8d2fd68e026",
-            "isWorkspace": false,
-            "isArtifactRoot": false
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/Questionnaire_list_lwc/Questionnaire_list_lwc.html",
-        {
-            "state": "u",
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/Questionnaire_list_lwc/Questionnaire_list_lwc.html",
-            "isDirectory": false,
-            "isMetadataFile": false,
-            "size": 2863,
-            "modifiedTime": 1547837109306,
-            "changeTime": 1547837109306,
-            "contentHash": "4a439f64a84ab2a88d8d5a9b838948756e5f5149",
-            "isWorkspace": false,
-            "isArtifactRoot": false
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/Questionnaire_list_lwc/Questionnaire_list_lwc.js",
-        {
-            "state": "u",
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/Questionnaire_list_lwc/Questionnaire_list_lwc.js",
-            "isDirectory": false,
-            "isMetadataFile": false,
-            "size": 1888,
-            "modifiedTime": 1547836996206,
-            "changeTime": 1547836996206,
-            "contentHash": "31d6acd20e770c71e184e2769d38a913f6bf01b7",
-            "isWorkspace": false,
-            "isArtifactRoot": false
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/Questionnaire_list_lwc/Questionnaire_list_lwc.js-meta.xml",
-        {
-            "state": "u",
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/Questionnaire_list_lwc/Questionnaire_list_lwc.js-meta.xml",
-            "isDirectory": false,
-            "isMetadataFile": true,
-            "size": 379,
-            "modifiedTime": 1546941923236,
-            "changeTime": 1546941923236,
-            "contentHash": "5320f27ecd45fbba6f0b98ed137fd8e565d8d687",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "isWorkspace": false
         }
     ],
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 192,
             "modifiedTime": 1547796828000,
             "changeTime": 1547837301606,
             "contentHash": "d8a680e66e5ec45cf0e4514ab0558b00eadf8666",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -992,14 +916,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 128,
             "modifiedTime": 1546847557000,
             "changeTime": 1546847557187,
             "contentHash": "4cecd84dadd5986acebd96f8eb80379ef7fd5c0e",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1007,14 +931,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/Questionnaire_Answer__c.object-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/Questionnaire_Answer__c.object-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 2190,
             "modifiedTime": 1545404737000,
             "changeTime": 1546729185025,
             "contentHash": "fd7fa6833a181f8613a0eef46591f06d8212ec8f",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1022,14 +946,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 224,
             "modifiedTime": 1546847488000,
             "changeTime": 1546847488969,
             "contentHash": "33ab79329b2d80f4cf6c823990185925f74fe26b",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1037,14 +961,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields/Agree_with_Question__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields/Agree_with_Question__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 1327,
             "modifiedTime": 1545404737000,
             "changeTime": 1546729185030,
             "contentHash": "08c5868487d2198a2166ccb8e92f9c5ace250d26",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1052,14 +976,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields/Comments__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields/Comments__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 362,
             "modifiedTime": 1545404737000,
             "changeTime": 1546729185033,
             "contentHash": "812b450e1be4f797480606d0ff7862d2339d1f80",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1067,14 +991,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields/QuestionnaireQuestion__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields/QuestionnaireQuestion__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 672,
             "modifiedTime": 1545404737000,
             "changeTime": 1546729185036,
             "contentHash": "4ad912aed2704cb35d7ff5f6e3d616ee1ed6ab8b",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1082,14 +1006,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields/Questionnaire_Returned__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields/Questionnaire_Returned__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 671,
             "modifiedTime": 1545404737000,
             "changeTime": 1546729185039,
             "contentHash": "e0de32af5c99d27c49c71de3d9b6242a3c2e370e",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1097,14 +1021,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields/Rating__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Answer__c/fields/Rating__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 385,
             "modifiedTime": 1545404737000,
             "changeTime": 1546729185042,
             "contentHash": "7a2d3e407171867514eae02bdad61c1ac4c24af7",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1112,14 +1036,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 160,
             "modifiedTime": 1546847571000,
             "changeTime": 1546847571689,
             "contentHash": "345d42ec86a4cd68bf1a8fe4e1752170d22a3b57",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1127,14 +1051,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/Questionnaire_Question__c.object-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/Questionnaire_Question__c.object-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 2199,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185046,
             "contentHash": "cdd6996c8dce60be52904926e0a20aa28743d169",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1142,14 +1066,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/fields",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/fields",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 128,
             "modifiedTime": 1546847477000,
             "changeTime": 1546847477940,
             "contentHash": "95ca63bec0aa98346c5f47fc004149e260a58266",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1157,14 +1081,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/fields/QuestionNumber__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/fields/QuestionNumber__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 401,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185051,
             "contentHash": "34f871f13b7b921831b1007e7630fc46196597b4",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1172,14 +1096,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/fields/Questionnaire__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/fields/Questionnaire__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 565,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185053,
             "contentHash": "81dd08eb0ddfa839c80e949810053950bc8e64ae",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1187,14 +1111,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/listViews",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/listViews",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 96,
             "modifiedTime": 1546847244000,
             "changeTime": 1546847244707,
             "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1202,14 +1126,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/listViews/All.listView-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Question__c/listViews/All.listView-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 204,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185058,
             "contentHash": "a09136a1a46c72265bcd1de0f4a07ba06ec1e9bd",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1217,14 +1141,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 160,
             "modifiedTime": 1546847557000,
             "changeTime": 1546847557196,
             "contentHash": "dd4c8fde0f9c5ce56590722c2d95cd154af3882a",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1232,14 +1156,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/Questionnaire_Returned__c.object-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/Questionnaire_Returned__c.object-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 2177,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185062,
             "contentHash": "da2608fb087426750834729b467dccacc73f8044",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1247,14 +1171,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 224,
             "modifiedTime": 1546847447000,
             "changeTime": 1546847447617,
             "contentHash": "692fd986a30130b96c079eaf145d57b054ecec60",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1262,14 +1186,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields/Answered_By__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields/Answered_By__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 468,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185067,
             "contentHash": "cf2861f4626e41dbe9ffde3fd11e816663787768",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1277,14 +1201,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields/Contact__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields/Contact__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 530,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185070,
             "contentHash": "a285132d778d48e0859c26aad26947f3435a2501",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1292,14 +1216,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields/Questionnaire__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields/Questionnaire__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 551,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185072,
             "contentHash": "3482911f7ef32a321034a8646e7db7be2c5f5020",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1307,14 +1231,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields/Submitted__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields/Submitted__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 324,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185075,
             "contentHash": "7adf1b5447fec72c85e9bfc424d5a1238a8b0e17",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1322,14 +1246,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields/Terms_and_Conditions__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/fields/Terms_and_Conditions__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 346,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185078,
             "contentHash": "a1e42e070a1ed2ed992dfbcd2d9f71a3838ed2c7",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1337,14 +1261,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/listViews",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/listViews",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 128,
             "modifiedTime": 1546847417000,
             "changeTime": 1546847417388,
             "contentHash": "915f0742a4220017a64d6be3c304efdec607b791",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1352,14 +1276,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/listViews/All.listView-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/listViews/All.listView-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 355,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185082,
             "contentHash": "5194f919154731a1383f1e4834de7b6ee3e7cff3",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1367,14 +1291,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/listViews/All1.listView-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire_Returned__c/listViews/All1.listView-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 205,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185086,
             "contentHash": "301c9a001074105644f45e03f6240b10381e43c0",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1382,14 +1306,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 160,
             "modifiedTime": 1546847542000,
             "changeTime": 1546847542010,
             "contentHash": "71a315bd634a5892408fd8cb88626525d4e9083f",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1397,14 +1321,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/Questionnaire__c.object-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/Questionnaire__c.object-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 2163,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185090,
             "contentHash": "a4fda2c17b7914deba91648cf0f5316bac76620a",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1412,14 +1336,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/fields",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/fields",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 128,
             "modifiedTime": 1546847405000,
             "changeTime": 1546847405194,
             "contentHash": "69117bb75077f6f87b51c5206527557c7860da90",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1427,14 +1351,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/fields/Description__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/fields/Description__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 355,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185094,
             "contentHash": "8b9a8cdb7436ce1c43d047c333ed3cc6f3c27048",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1442,14 +1366,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/fields/Total_Questions__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/fields/Total_Questions__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 429,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185099,
             "contentHash": "94e7e077f74075566426a75ab1c686fe850f5014",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1457,14 +1381,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/listViews",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/listViews",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 96,
             "modifiedTime": 1546847263000,
             "changeTime": 1546847263057,
             "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1472,14 +1396,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/listViews/All.listView-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/objects/Questionnaire__c/listViews/All.listView-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 204,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185103,
             "contentHash": "a09136a1a46c72265bcd1de0f4a07ba06ec1e9bd",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1487,14 +1411,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/permissionsets",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/permissionsets",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 96,
             "modifiedTime": 1547796833000,
             "changeTime": 1547796833967,
             "contentHash": "6542922df3364fc10cc417ea4eaf1aa022e1372a",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1502,14 +1426,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/permissionsets/Questionnaires.permissionset-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/permissionsets/Questionnaires.permissionset-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 3951,
             "modifiedTime": 1546736376586,
             "changeTime": 1546736376586,
             "contentHash": "d076c6a7b0843782eaf970636ca76b7f6bbfb951",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1517,14 +1441,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 224,
             "modifiedTime": 1547796820000,
             "changeTime": 1547837301565,
             "contentHash": "15d1c1bb9dcafae6521bcc88987f478a4876295f",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1532,14 +1456,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs/Questionnaire_Console.tab-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs/Questionnaire_Console.tab-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 279,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185107,
             "contentHash": "c261292d0e2574ed035d2dcc2ee7e23a1db4945d",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1547,14 +1471,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs/Questionnaire_Console_LWC.tab-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs/Questionnaire_Console_LWC.tab-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 281,
             "modifiedTime": 1547250084174,
             "changeTime": 1547250084694,
             "contentHash": "c0bf68bee9dd737db1b95ef080ea6a52977a8444",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1562,14 +1486,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs/Questionnaire_Returned__c.tab-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs/Questionnaire_Returned__c.tab-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 223,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185110,
             "contentHash": "b02a681f008b727f20c925eeb577f652ec2a70cf",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1577,14 +1501,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs/Questionnaire__c.tab-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs/Questionnaire__c.tab-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 228,
             "modifiedTime": 1545404738000,
             "changeTime": 1546729185191,
             "contentHash": "08526489246c412385e94eb9471ba71ba0637a18",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1592,14 +1516,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs/Questionnaires_LWC.tab-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/tabs/Questionnaires_LWC.tab-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 338,
             "modifiedTime": 1547250084175,
             "changeTime": 1547250084698,
             "contentHash": "cd20c53e4167c12f84ed0475b9ce938811c935fe",
+            "isMetadataFile": true,
+            "state": "u",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -1607,16 +1531,224 @@
     [
         "/Users/barryhughes/Documents/LWC Course",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 512,
-            "modifiedTime": 1547837777000,
+            "modifiedTime": 1548464353000,
             "changeTime": 1547837778929,
             "contentHash": "95c837677f73f10468f54fdc7b780154d97fd218",
+            "isMetadataFile": false,
+            "state": "u",
             "isWorkspace": true,
             "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairelist",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairelist",
+            "isDirectory": true,
+            "size": 160,
+            "modifiedTime": 1548463397000,
+            "changeTime": 1548460019568,
+            "contentHash": "61a033b8a79008f5d57011f7a7615189bd6ef965",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairelist/questionnairelist.html",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairelist/questionnairelist.html",
+            "isDirectory": false,
+            "size": 973,
+            "modifiedTime": 1548463395522,
+            "changeTime": 1548463395522,
+            "contentHash": "68490e67043bb597716c5e22e545c97bd7a3a9a2",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairelist/questionnairelist.js",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairelist/questionnairelist.js",
+            "isDirectory": false,
+            "size": 3070,
+            "modifiedTime": 1548461505914,
+            "changeTime": 1548461505914,
+            "contentHash": "3b379c5976c3d14cf7de274b549a65a5ef96c2ca",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairelist/questionnairelist.js-meta.xml",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairelist/questionnairelist.js-meta.xml",
+            "isDirectory": false,
+            "size": 396,
+            "modifiedTime": 1548460750181,
+            "changeTime": 1548460750181,
+            "contentHash": "495a704b7308e8fc4c3741e7a83dad2c1334403b",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairecard",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairecard",
+            "isDirectory": true,
+            "size": 160,
+            "modifiedTime": 1548464354000,
+            "changeTime": 1548460716171,
+            "contentHash": "8b76d41fd0738c2294b32236d54cbe64b7570abc",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairecard/questionnairecard.html",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairecard/questionnairecard.html",
+            "isDirectory": false,
+            "size": 665,
+            "modifiedTime": 1548460699086,
+            "changeTime": 1548460699086,
+            "contentHash": "0ab48aaf2d6b422b2ccacef13ef33c242ee63dee",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairecard/questionnairecard.js",
+        {
+            "state": "u",
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairecard/questionnairecard.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 689,
+            "modifiedTime": 1548464352040,
+            "changeTime": 1548464352040,
+            "contentHash": "bb5ed73819e035c066a4fabc24e5fc159d40536a"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairecard/questionnairecard.js-meta.xml",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairecard/questionnairecard.js-meta.xml",
+            "isDirectory": false,
+            "size": 232,
+            "modifiedTime": 1548460591961,
+            "changeTime": 1548460591978,
+            "contentHash": "c8124d921bdd63a1750545fc7e4f9f2c46ce6dc6",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairetocomplete",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairetocomplete",
+            "isDirectory": true,
+            "size": 160,
+            "modifiedTime": 1548464298000,
+            "changeTime": 1548461553824,
+            "contentHash": "573e063a9625bb3138b6e2297e335137fbc26f96",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairetocomplete/questionnairetocomplete.html",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairetocomplete/questionnairetocomplete.html",
+            "isDirectory": false,
+            "size": 2029,
+            "modifiedTime": 1548464295314,
+            "changeTime": 1548464295314,
+            "contentHash": "ede7f9ed57ea267434b45a4af53b6a2801a99700",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairetocomplete/questionnairetocomplete.js",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairetocomplete/questionnairetocomplete.js",
+            "isDirectory": false,
+            "size": 3297,
+            "modifiedTime": 1548461550699,
+            "changeTime": 1548461550699,
+            "contentHash": "12b9961bafba426d927fdb38c911daee24191463",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairetocomplete/questionnairetocomplete.js-meta.xml",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnairetocomplete/questionnairetocomplete.js-meta.xml",
+            "isDirectory": false,
+            "size": 238,
+            "modifiedTime": 1548461408561,
+            "changeTime": 1548461409608,
+            "contentHash": "8a8e6d35eae67728ccaf0d46a0e029f594506d6f",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnaireanswer",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnaireanswer",
+            "isDirectory": true,
+            "size": 160,
+            "modifiedTime": 1548464265000,
+            "changeTime": 1548464265419,
+            "contentHash": "4ba850527137dd44169f3e5d376576f5ae5f6d4a",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnaireanswer/questionnaireanswer.html",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnaireanswer/questionnaireanswer.html",
+            "isDirectory": false,
+            "size": 1723,
+            "modifiedTime": 1548464251803,
+            "changeTime": 1548464251803,
+            "contentHash": "64c908469144758cff1693a03771b6eeda82878d",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnaireanswer/questionnaireanswer.js",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnaireanswer/questionnaireanswer.js",
+            "isDirectory": false,
+            "size": 1305,
+            "modifiedTime": 1548464263603,
+            "changeTime": 1548464263603,
+            "contentHash": "1eaf487f65f311c148a65910822912ee446cadaa",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnaireanswer/questionnaireanswer.js-meta.xml",
+        {
+            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnaireanswer/questionnaireanswer.js-meta.xml",
+            "isDirectory": false,
+            "size": 234,
+            "modifiedTime": 1548464232753,
+            "changeTime": 1548464232970,
+            "contentHash": "765907e0498d8d1136708b917564ed5b0e53f2bf",
+            "isMetadataFile": true,
+            "state": "u"
         }
     ]
 ]

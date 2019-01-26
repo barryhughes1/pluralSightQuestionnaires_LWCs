@@ -1,14 +1,18 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track } from 'lwc';
 
-export default class Questionnaire_list extends LightningElement {
-
+export default class QuestionnaireList extends LightningElement {
+    
         // This data gets injected into the example.html view
         // and is accessible using double brackets:
         // e.g. {{ recordTitle }}
-        json = {
+		// This data gets injected into the example.html view
+		// and is accessible using double brackets:
+		// e.g. {{ recordTitle }}
+		json = {
             "pageTitle": "Questionnaires",
             "questionnaires": [
-                {
+              {
+                "id" : "100001",
                 "name": "UAT Evaluation",
                 "description__c": "Customer - Direct",
                 "due_date__c": "11-04-2017",
@@ -19,8 +23,9 @@ export default class Questionnaire_list extends LightningElement {
                 "questions_mandatory__c": "8",
                 "answers__c": "6",
                 "status-theme__c" : "info"
-                },
-                {
+              },
+              {
+                "id" : "100002",
                 "name": "Big Sky Inc Project",
                 "description__c": "Customer - Direct",
                 "due_date__c": "11-08-2017",
@@ -31,8 +36,9 @@ export default class Questionnaire_list extends LightningElement {
                 "questions_mandatory__c": "8",
                 "answers__c": "6",
                 "status-theme__c" : "info"
-                },
-                {
+              },
+              {
+                "id" : "100003",
                 "name": "Edge Communications Data Cleanse Project Evaluation",
                 "description__c": "Customer - Direct",
                 "due_date__c": "11-11-2017",
@@ -43,7 +49,37 @@ export default class Questionnaire_list extends LightningElement {
                 "questions_mandatory__c": "8",
                 "answers__c": "6",
                 "status-theme__c" : "success"
-                }
+              }
             ]
-        };
+          };
+  
+  
+          pageTitle = this.json.pageTitle;
+          questionnaires = this.json.questionnaires;
+
+          @track showMarkup = true;
+          @track selectedQuestionnaire = {};
+          @track selectedQuestionnaireId = '';
+          @track showSelectedQuestionnaire = false;
+
+      @track clickedButtonLabel;
+
+      handleSaveClick(event) {
+          this.clickedButtonLabel = event.target.label;
+      }
+
+    questionnaireSelected(event) {
+        const questionnaireId = event.detail;
+        this.selectedQuestionnaireId = questionnaireId;
+        this.showSelectedQuestionnaire = true;
+//        this.selectedQuestionnaire = this.questionnaires.data.find(contact => contact.Id === contactId);
+    }
+
+    questionnaireUnselected(event) {
+        this.selectedQuestionnaireId = '';
+        this.showSelectedQuestionnaire = false;
+//        this.selectedQuestionnaire = this.questionnaires.data.find(contact => contact.Id === contactId);
+    }
+    
+
 }

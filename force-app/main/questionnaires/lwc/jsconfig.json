@@ -6,8 +6,17 @@
             "c/hello-world": [
                 "../../default/lwc/helloWorld/helloWorld.js"
             ],
-            "c/questionnaire_list_lwc": [
-                "Questionnaire_list_lwc/Questionnaire_list_lwc.js"
+            "c/questionnaireanswer": [
+                "questionnaireanswer/questionnaireanswer.js"
+            ],
+            "c/questionnairecard": [
+                "questionnairecard/questionnairecard.js"
+            ],
+            "c/questionnairelist": [
+                "questionnairelist/questionnairelist.js"
+            ],
+            "c/questionnairetocomplete": [
+                "questionnairetocomplete/questionnairetocomplete.js"
             ]
         }
     },
