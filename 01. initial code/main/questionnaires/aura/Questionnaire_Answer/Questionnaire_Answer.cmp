@@ -1,0 +1,137 @@
+<aura:component access="global"
+                controller="Questionnaire_Controller"
+                extends="c:utilityFunctions">
+	
+    <!-- 1. Attributes -->
+    <aura:attribute name="questionObj" type="Object" default="" 
+                    description="Question and Answer" />
+    <aura:attribute name="returnId" type="String" default="" 
+                    description="Questionnaire Return Record ID" />
+    <aura:attribute name="questionnaireID" type="String" default="" 
+                    description="Questionnaire Record ID" />
+    <aura:attribute name="status" type="Boolean" default="false"/>
+
+    <aura:attribute name="options" type="List" default="[
+    {'label': 'Strongly Disagree', 'value': 'Strongly Disagree'},
+    {'label': 'Disagree', 'value': 'Disagree'},
+    {'label': 'Undecided', 'value': 'Undecided'},
+    {'label': 'Agree', 'value': 'Agree'},
+    {'label': 'Strongly Agree', 'value': 'Strongly Agree'}
+    ]"/>
+    <aura:attribute name="value" type="String" default=""/>
+    <aura:attribute name="comments" type="String" default=""/>
+	<aura:attribute name="rowIndex" 
+	              type="Integer" 
+	              default="0"
+	              description="Passing in the row index from the parent table to help with tab indexing fields" />  
+	<aura:attribute name="numberOfTabs" 
+	              type="Integer" 
+	              default="2"
+	              description="Passing in the row index from the parent table to help with tab indexing fields" />
+    
+    <!-- 2. Handlers -->
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <!-- 3. Events -->
+  
+    <!-- 4. Methods -->
+	  
+    <!-- 5. Data Service Components -->      
+	<aura:attribute name="question" 
+                    type="Questionnaire_Question__c" 
+                    description="Question Record object from Data Service (targetRecord)"/>
+    <aura:attribute name="questionFields" 
+                    type="Questionnaire_Question__c" 
+                    description="Question Record object from Data Service (targetFields)"/>
+    <aura:attribute name="questionRecordError" 
+                    type="String" 
+                    description="Question Record Errors from Data Service (targetError)"/>
+    <force:recordData aura:id="questionRecordLoader"
+                    recordId="{!v.questionObj.questionID}"
+                    fields="Id,Name,QuestionNumber__c"
+                    targetFields="{!v.questionFields}"
+                    targetRecord="{!v.question}"
+                    targetError="{!v.questionRecordError}"
+                    recordUpdated="{!c.handleQuestionRecord_LDS}"
+                    mode="VIEW"
+                    />    
+
+	<aura:attribute name="answer" 
+                    type="Questionnaire_Answer__c" 
+                    description="Questionnaire Answer Record object from Data Service (targetRecord)"/>
+    <aura:attribute name="answerFields" 
+                    type="Questionnaire_Answer__c" 
+                    description="Questionnaire Answer Record object from Data Service (targetFields)"/>
+    <aura:attribute name="answerRecordError" 
+                    type="String" 
+                    description="Question Record Errors from Data Service (targetError)"/>
+    <force:recordData aura:id="answerRecordLoader"
+                    recordId="{!v.questionObj.answerID}"
+                    fields="Id,Name,Agree_with_Question__c,QuestionnaireQuestion__c,Questionnaire_Returned__c,Comments__c"
+                    targetFields="{!v.answerFields}"
+                    targetRecord="{!v.answer}"
+                    targetError="{!v.answerRecordError}"
+                    recordUpdated="{!c.handleAnswerRecord_LDS}"
+                    mode="EDIT"
+                    />
+    
+    
+    <!-- 6. Layout -->   
+    <div class="slds-box slds-theme_shade slds-m-around_large">
+      <div class="slds-form slds-form_stacked">
+        <fieldset class="slds-form-element">
+            <div class="slds-form-element__control">
+                <aura:if isTrue="{! v.status }">
+				    <lightning:radioGroup aura:id="mygroup"
+				        name="{!v.questionFields.Name}"
+				        label="{!v.questionFields.Name}"
+				        type="radio"
+						tabindex="{! (v.rowIndex*v.numberOfTabs) + 1}"
+                        options="{! v.options }"
+				        value="{! v.answerFields.Agree_with_Question__c }"
+				        onblur="{! c.handleAnswerChange }"
+                        disabled="true" />
+                    <aura:set attribute="else">{! (v.rowIndex*v.numberOfTabs) + 1}...
+                        <lightning:radioGroup aura:id="mygroup"
+                            name="{!v.questionFields.Name}"
+                            label="{!v.questionFields.Name}"
+                            type="radio"
+							tabindex="{! (v.rowIndex*v.numberOfTabs) + 1}"
+                            options="{! v.options }"
+                            value="{! v.answerFields.Agree_with_Question__c }"
+                            onblur="{! c.handleAnswerChange }" />
+                    </aura:set>
+                </aura:if>
+
+            </div>
+        </fieldset>
+        <div class="slds-form-element">
+              <label class="{! v.status ? 'slds-form-element__label' : 'slds-form-element__label slds-assistive-text'}" for="comments">Please add any further comments</label>
+              <div class="slds-form-element__control">
+                <aura:if isTrue="{! v.status }">
+                    {!v.answerFields.Comments__c}
+                    <aura:set attribute="else">{! (v.rowIndex*v.numberOfTabs) + 2}....
+                        <lightning:input name="comments" value="{!v.answerFields.Comments__c}"
+                                        placeholder="Please add any further comments"
+										tabindex="{! (v.rowIndex*v.numberOfTabs) + 2}"
+                                        onblur="{!c.handleAnswerChange}" />
+                    </aura:set>
+                </aura:if>
+			  </div>
+        </div>
+      </div>
+        <!-- Display Lightning Data Service errors, if any -->
+        <aura:if isTrue="{!not(empty(v.questionRecordError))}">
+            <ui:message title="Error" severity="error" closable="true">
+                {!v.questionRecordError}
+            </ui:message>
+        </aura:if>
+        <aura:if isTrue="{!not(empty(v.answerRecordError))}">
+            <ui:message title="Error" severity="error" closable="true">
+                {!v.answerRecordError}
+            </ui:message>
+        </aura:if> 
+    </div>
+
+    
+</aura:component>

@@ -1,0 +1,45 @@
+<template>
+
+    <h2 class="slds-text-align--center slds-text-heading--large slds-m-around--large">
+        {json.Title}
+    </h2>
+
+    <template for:each={json.questions} for:item="question">
+        <c-questionnaire-answer key={question.name} 
+                                question={question}>
+        </c-questionnaire-answer>
+    </template>
+
+
+    <div class="slds-box slds-m-around_x-small">
+    <div class="slds-grid slds-wrap">
+        <div class="slds-size_1-of-3">
+        <span class="slds-checkbox">
+            <lightning-input label="I accept the terms of use and participation in this questionnaire" 
+                             type="checkbox"
+                             value={termsConditions} 
+                             onchange={handleChangeTermsConditions}></lightning-input>
+        </span>      
+        </div>
+        <div class="slds-size_2-of-3">
+        <div class="slds-text-align_right">
+            <lightning-button variant="brand" 
+                                label="Mark Complete" 
+                                title="Mark Complete" 
+                                icon-name="utility:download" 
+                                class="slds-m-left">
+
+            </lightning-button>                                
+            <lightning-button variant="brand" 
+                                label="Close" 
+                                title="Close" 
+                                icon-name="utility:close" 
+                                onclick={closeQuestionnaire}
+                                class="slds-m-left_medium">
+            </lightning-button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+</template>

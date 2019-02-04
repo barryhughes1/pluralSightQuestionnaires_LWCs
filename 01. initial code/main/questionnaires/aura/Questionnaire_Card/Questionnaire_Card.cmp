@@ -1,0 +1,85 @@
+<aura:component >
+	
+	<!-- 1. Attributes -->
+	<aura:attribute name="QuestionnaireObj" 
+					type="Object"
+					default=""
+					description="Retrieved Object of the Questionnaire detailed in the Card" />
+	<aura:attribute name="cardTheme"
+					type="String"
+					default="slds-theme_inverse"
+					description="Theme to tbe applied to the footer to identify status value"
+					access="private" />
+	<aura:attribute name="selectedQuestionnaireObj"
+					type="Object"
+					default=""
+					description="The Questionnaire Object to be opened" />
+    
+	<!-- 2. Handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+	<!-- 3. Events -->
+  
+	<!-- 4. Methods -->
+	  
+	<!-- 5. Data Service Components -->      
+	<aura:attribute name="questionnaire" 
+					type="Questionnaire__c" 
+					description="Questionnaire Record object from Data Service (targetRecord)"/>
+	<aura:attribute name="questionnaireFields" 
+					type="Questionnaire__c" 
+					description="Questionnaire Record object from Data Service (targetFields)"/>
+	<aura:attribute name="questionnaireRecordError" 
+					type="String" 
+					description="Questionnaire Record Errors from Data Service (targetError)"/>
+	<force:recordData aura:id="questionnaireRecordLoader"
+	                recordId="{!v.QuestionnaireObj.questionnaireId}"
+	                fields="Id,Name,Description__c,Total_Questions__c"
+	                targetFields="{!v.questionnaireFields}"
+	                targetRecord="{!v.questionnaire}"
+	                targetError="{!v.questionnaireRecordError}"
+	                recordUpdated="{!c.handleQuestionnaireRecord_LDS}"
+	                />    
+    
+	<!-- 6. Layout --> 
+	<article class="slds-card slds-m-around--medium">
+	  <div class="slds-card__header slds-grid">
+	    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+	      <div class="slds-media__figure">
+		    <span class="slds-icon_container slds-icon-standard-bot" title="Questionnaires Icon">
+			  <lightning:icon iconName="custom:custom18" 
+			  				  size="small" 
+			  				  alternativeText="Questionnaires"/>
+	        </span>
+	      </div>
+	      <div class="slds-media__body">
+	        <h2>
+	          <a onclick="{!c.openQuestionnaire}" class="slds-card__header-link slds-truncate" title="Open Questionnaire">
+	            <span class="slds-text-heading_small">{!v.questionnaireFields.Name}</span>
+	          </a>
+	        </h2>
+	      </div>
+	    </header>
+	    <div class="slds-no-flex">
+	    	<lightning:button aura:id="openButton"
+	    					  label="Open" 
+	    					  onclick="{!c.openQuestionnaire}" />
+	    </div>
+	  </div>
+	  <div class="slds-card__body slds-card__body_inner">
+	    <p>{!v.questionnaireFields.Description__c} ({!v.questionnaireFields.Total_Questions__c} qustions)</p>
+
+        <!-- Display Lightning Data Service errors, if any -->
+        <aura:if isTrue="{!not(empty(v.questionnaireRecordError))}">
+                <ui:message title="Error" severity="error" closable="true">
+                    {!v.questionnaireRecordError}
+                </ui:message>
+        </aura:if>
+
+      </div>
+	  <footer class="{! 'slds-card__footer ' + v.cardTheme + '' }">
+		{!v.QuestionnaireObj.questionnaireStatus}
+	  </footer>
+	</article>
+    
+</aura:component>

@@ -1,0 +1,86 @@
+<aura:component access="global" extends="c:utilityFunctions">
+
+	<!-- 1. Attributes -->
+	<aura:attribute name="pageTitle" 
+			type="String"
+			default="Questionnaire"
+			description="Title of the Questionnaires" />
+	<aura:attribute name="selectedQuestionnaireObj"
+					type="Object"
+					default=""
+					description="The Questionnaire Object to be opened" />
+    
+    
+	<!-- 2. Handlers -->
+ 	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+	<!-- 3. Events -->
+  
+	<!-- 4. Methods -->
+	  
+	<!-- 5. Data Service Components -->  
+	<aura:attribute name="questionnaireReturned" 
+			type="Questionnaire_Returned__c" 
+			description="Questionnaire Returned Record object from Data Service (targetRecord)"/>
+	<aura:attribute name="questionnaireReturnedFields" 
+			type="Questionnaire_Returned__c" 
+			description="Questionnaire Returned Record object from Data Service (targetFields)"/>
+	<aura:attribute name="questionnaireReturnedRecordError" 
+			type="String" 
+			description="Questionnaire Returned Record Errors from Data Service (targetError)"/>
+	<force:recordData aura:id="questionnaireReturnedRecordLoader"
+			recordId="{!v.selectedQuestionnaireObj.questionnaireReturnedId}"
+			fields="Id,Name,Questionnaire__c,Submitted__c,Terms_and_Conditions__c"
+			targetFields="{!v.questionnaireReturnedFields}"
+			targetRecord="{!v.questionnaireReturned}"
+			targetError="{!v.questionnaireReturnedRecordError}"
+			recordUpdated="{!c.handleQuestionnaireReturnedRecord_LDS}"
+			mode="EDIT"
+			/>
+    
+	<!-- 6. Layout -->
+    <h2 class="slds-text-align--center slds-text-heading--large slds-m-around--large">
+	  {! v.pageTitle }
+	</h2>
+    
+	<aura:iteration items="{!v.selectedQuestionnaireObj.questionAnswerList}" var="q" indexVar="index">
+	    <c:Questionnaire_Answer questionnaireID="{!v.selectedQuestionnaireObj.questionnaireId}"
+				                questionObj="{!q}"
+				                returnId="{!v.selectedQuestionnaireObj.questionnaireReturnedId}"
+                                status="{! v.questionnaireReturnedFields.Submitted__c}"
+                                rowIndex="{!index}" />
+	</aura:iteration>
+        
+    <div class="slds-box slds-m-around_medium">
+        <div class="slds-grid slds-wrap">
+            <aura:if isTrue="{! !v.questionnaireReturnedFields.Submitted__c }" >
+                <div class="slds-size_1-of-1 slds-size_large-size_1-of-2">
+                    <lightning:input aura:id="cbox"
+                                     type="checkbox" 
+                                     label="I accept the terms of use and participation in this questionnaire" 
+                                     name="TandCs" 
+                                     value="{!v.questionnaireReturnedFields.Terms_and_Conditions__c}"
+                                     />
+                </div>
+            </aura:if>
+            <div class="slds-size_1-of-1 slds-size_large-size_1-of-2">
+                <div class="slds-text-align_right">
+                    <aura:if isTrue="{! !v.questionnaireReturnedFields.Submitted__c }" >
+                        <lightning:button variant="brand" 
+                                          label="Mark Complete" 
+                                          iconName="utility:answer" 
+                                          iconPosition="left" 
+                                          onclick="{! c.handleSaveClick }" />
+                    </aura:if>
+                    <lightning:button variant="brand" 
+                                      label="Back to Questionnaires" 
+                                      iconName="utility:list" 
+                                      iconPosition="left" onclick="{! c.handleBackClick }" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <p>&nbsp;</p>
+
+</aura:component>
