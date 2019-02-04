@@ -1,6 +1,6 @@
 import { LightningElement, track, api } from 'lwc';
 
-export default class Questionnaire extends LightningElement {
+export default class QuestionnaireLwc extends LightningElement {
 
 
     json = {

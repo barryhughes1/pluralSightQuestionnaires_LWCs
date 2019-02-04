@@ -14619,11 +14619,11 @@
   var _tmpl$o = Engine.registerTemplate(tmpl$m);
   tmpl$m.stylesheets = [];
   tmpl$m.stylesheetTokens = {
-    hostAttribute: "c-questionnaireLwc_questionnaireLwc-host",
-    shadowAttribute: "c-questionnaireLwc_questionnaireLwc"
+    hostAttribute: "c-questionnaire_questionnaire-host",
+    shadowAttribute: "c-questionnaire_questionnaire"
   };
 
-  class QuestionnaireLwc extends Engine.LightningElement {
+  class Questionnaire extends Engine.LightningElement {
     constructor(...args) {
       super(...args);
       this.json = {
@@ -14698,13 +14698,13 @@
 
   }
 
-  Engine.registerDecorators(QuestionnaireLwc, {
+  Engine.registerDecorators(Questionnaire, {
     track: {
       termsConditions: 1
     }
   });
 
-  var questionnaireLwc = Engine.registerComponent(QuestionnaireLwc, {
+  var questionnaire = Engine.registerComponent(Questionnaire, {
     tmpl: _tmpl$o
   });
 
@@ -14729,17 +14729,17 @@
         "slds-m-around--large": true
       },
       key: 2
-    }, [api_dynamic($cmp.json.pageTitle)]) : null, api_iterator($cmp.json.questionnaires, function (questionnaire) {
+    }, [api_dynamic($cmp.json.pageTitle)]) : null, api_iterator($cmp.json.questionnaires, function (questionnaire$$1) {
       return !$cmp.showQuestionnaire ? api_custom_element("c-questionnaire-card", questionnaireCard, {
         props: {
-          "questionnaire": questionnaire
+          "questionnaire": questionnaire$$1
         },
-        key: api_key(4, questionnaire.name),
+        key: api_key(4, questionnaire$$1.name),
         on: {
           "selected": _m0 || ($ctx._m0 = api_bind($cmp.openQuestionnaire))
         }
       }, []) : null;
-    }), $cmp.showQuestionnaire ? api_custom_element("c-questionnaire-lwc", questionnaireLwc, {
+    }), $cmp.showQuestionnaire ? api_custom_element("c-questionnaire", questionnaire, {
       key: 5,
       on: {
         "close": _m1 || ($ctx._m1 = api_bind($cmp.closeQuestionnaire))
