@@ -1,0 +1,16 @@
+<template>
+
+<h2 if:false={showQuestionnaire} class="slds-text-align_center slds-text-heading_large slds-m-around_large">
+    {json.pageTitle}
+</h2>
+
+<template if:false={showQuestionnaire} for:each={json.questionnaires} for:item="questionnaire">
+    <c-questionnaire-card key={questionnaire.name} 
+                            questionnaire={questionnaire} 
+                            onselected={openQuestionnaire}>
+    </c-questionnaire-card>
+</template>
+
+<c-questionnaire-lwc if:true={showQuestionnaire} onclose={closeQuestionnaire}></c-questionnaire-lwc>
+
+</template>

@@ -1,0 +1,59 @@
+<template>
+<!--
+    <div class="slds-m-around_medium">
+    <lightning-card icon-name="custom:custom18" >		  
+        <h1 slot="title">{questionnaire.name} ({questionnaire.id})</h1>
+        <p>{questionnaire.description__c} {status}</p>
+        <p>{questionnaire.answers__c} answered of {questionnaire.questions__c}</p>
+        <div slot="actions">
+            <lightning-button label="Open" title="Open" onclick={openQuestionnaire} class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div slot="footer" style="margin: 0px;" class={questionnaire.cardtheme}>
+            <h6>{questionnaire.status__c}</h6>
+        </div>
+    </lightning-card>
+    </div>
+-->
+
+    <article key={questionnaire.name} class="slds-card slds-m-around_medium">
+
+    <div class="slds-card__header slds-grid">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+            <span class="slds-icon_container" title="description of icon when needed">
+<!--
+            <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom18" />
+            </svg>
+-->
+                <lightning-icon icon-name="custom:custom18" 
+                                size="small"
+                                alternative-text="Questionnaire" ></lightning-icon>
+            </span>
+        </div>
+        <div class="slds-media__body">
+            <h2>
+            <a href="/questionnaire.html" class="slds-card__header-link slds-truncate" title="[object Object]">
+                <span class="slds-text-heading_small">{questionnaire.name}</span>
+            </a>
+            </h2>
+        </div>
+        </header>
+        <div class="slds-no-flex">
+            <button class="slds-button slds-button_neutral" onclick={openQuestionnaire}>Open</button>
+<!--
+            <button class="slds-button slds-button_neutral" onclick="window.location.href='/questionnaire.html';">Open</button>
+-->
+        </div>
+    </div>
+
+    <div class="slds-card__body slds-card__body_inner">
+        <p>{questionnaire.description__c}</p>
+        <p>{questionnaire.questions__c} to answer</p>
+    </div>
+
+    <footer class={questionnaire.cardtheme}>{questionnaire.status__c}</footer>
+
+    </article>
+
+</template>
