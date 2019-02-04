@@ -6,7 +6,7 @@
     "build": "npm run create-scratch-org && npm run build-out-scratch-org",    
     "reset": "npm run delete-old-scratch-org && npm run create-scratch-org && npm run build-out-scratch-org",    
     "delete-old-scratch-org": "sfdx force:org:delete -p -u $SCRATCHORGNAME",
-    "create-scratch-org": "sfdx force:org:create -v $DEVHUB -s -f config/project-scratch-def.json -w 10 -a $SCRATCHORGNAME",
+    "create-scratch-org": "sfdx force:org:create -v $DEVHUB -s -f config/project-scratch-def.json -w 10 -d 30 -a $SCRATCHORGNAME",
     "build-out-scratch-org": "npm run push-source && npm run assign-questionnaires-app-permission-set && npm run import-questionnaires && npm run set-username-and-password && npm run get-org-user-details && npm run open-scratch-org",
     "push-source": "sfdx force:source:push -u $SCRATCHORGNAME -f",
     "assign-questionnaires-app-permission-set": "sfdx force:user:permset:assign -n Questionnaires",

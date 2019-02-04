@@ -29,10 +29,6 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Questionnaires_LWC</name>
-        <type>CustomTab</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>People</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>

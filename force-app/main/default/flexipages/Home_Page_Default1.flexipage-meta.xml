@@ -35,9 +35,6 @@
             <componentName>helloWorld</componentName>
         </componentInstances>
         <componentInstances>
-            <componentName>Questionnaire_list_lwc</componentName>
-        </componentInstances>
-        <componentInstances>
             <componentName>home:assistant</componentName>
         </componentInstances>
         <mode>Replace</mode>
