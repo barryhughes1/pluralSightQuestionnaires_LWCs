@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/hello-world": [
+                "../../default/lwc/helloWorld/helloWorld.js"
+            ],
+            "c/questionnaireanswer": [
+                "questionnaireanswer/questionnaireanswer.js"
+            ],
+            "c/questionnairecard": [
+                "questionnairecard/questionnairecard.js"
+            ],
+            "c/questionnairelist": [
+                "questionnairelist/questionnairelist.js"
+            ],
+            "c/questionnairetocomplete": [
+                "questionnairetocomplete/questionnairetocomplete.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ]
+}
