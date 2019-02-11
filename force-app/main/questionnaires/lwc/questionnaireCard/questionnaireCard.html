@@ -19,7 +19,7 @@
 
     <div class="slds-card__header slds-grid">
         <header class="slds-media slds-media_center slds-has-flexi-truncate">
-        <div class="slds-media__figure">
+            <div class="slds-media__figure">
             <span class="slds-icon_container" title="description of icon when needed">
 <!--
             <svg class="slds-icon slds-icon_small" aria-hidden="true">
@@ -32,9 +32,12 @@
             </span>
         </div>
         <div class="slds-media__body">
+            <!--
+               questionnaireId: {questionnaireId}<br/>Name: {name}ERROR: {error}
+-->
             <h2>
             <a href="/questionnaire.html" class="slds-card__header-link slds-truncate" title="[object Object]">
-                <span class="slds-text-heading_small">{questionnaire.name}</span>
+                <span class="slds-text-heading_small">{name}</span>
             </a>
             </h2>
         </div>
@@ -48,11 +51,11 @@
     </div>
 
     <div class="slds-card__body slds-card__body_inner">
-        <p>{questionnaire.description__c}</p>
-        <p>{questionnaire.questions__c} to answer</p>
+        <p>{description}</p>
+        <p>{questionsToAnswer} to answer</p>
     </div>
 
-    <footer class={questionnaire.cardtheme}>{questionnaire.status__c}</footer>
+    <footer class={cardTheme}>{status}</footer>
 
     </article>
 

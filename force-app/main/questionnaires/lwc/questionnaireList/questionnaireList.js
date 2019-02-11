@@ -1,6 +1,9 @@
-import { LightningElement, track } from 'lwc';
+import { LightningElement, track, wire } from 'lwc';
+import getQuestionnaires from '@salesforce/apex/Questionnaire_Controller.getQuestionnaires';
 
 export default class QuestionnaireList extends LightningElement {
+
+    @wire(getQuestionnaires) questionnaires;
 
     json = {
         "pageTitle": "Questionnaires",
@@ -45,15 +48,37 @@ export default class QuestionnaireList extends LightningElement {
     };
 
     @track showQuestionnaire;
+    @track selectedQuestionnaireId;
+    @track selectedQuestionnaire;
 
     openQuestionnaire(event) {
-        const questionnaireId = event.detail;
-        this.selectedQuestionnaireId = questionnaireId;
+//        const questionnaireId = event.detail;
+//        const questionnaireId = event.detail;
+        
+        console.log('+++++++++++++++++++++++++');
+        console.log(JSON.stringify(event.qobj));
+        console.log(event.detail);
+        console.log(JSON.stringify(this.questionnaires));
+        console.log('+++++++++++++++++++++++++');
+        console.log(this.questionnaires.data.length);
+        for(var i=0; i < this.questionnaires.data.length; i=i+1) {
+            console.log('LOOP');
+            if(this.questionnaires.data[i].questionnaireId === event.detail) {
+                this.selectedQuestionnaire = this.questionnaires.data[i];
+                console.log('Object: ' + JSON.stringify(this.selectedQuestionnaire));
+                console.log('ID: ' + this.questionnaires.data[i].questionnaireReturnedId);
+            }
+        }
+        console.log('+++++++++++++++++++++++++');
+        // learn from the timing if things
+        this.selectedQuestionnaireId = event.detail;
         this.showQuestionnaire = true;
+        console.log('+++++++++++++++++++++++++');
     }
 
-    closeQuestionnaire(event) {
+    closeQuestionnaire() {
         this.selectedQuestionnaireId = '';
+        this.selectedQuestionnaire = {};
         this.showQuestionnaire = false;
     }
 

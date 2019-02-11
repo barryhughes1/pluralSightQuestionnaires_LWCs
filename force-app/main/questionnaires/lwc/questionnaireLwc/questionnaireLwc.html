@@ -1,16 +1,34 @@
 <template>
 
+    <p>selectedQuestionnaireId: {selectedQuestionnaireId}</p>
+    <p>selectedQuestionnaireId: {selectedQuestionnaireId}</p>
+    <p>selectedQuestionnaire: {selectedQuestionnaire}</p>
+
     <h2 class="slds-text-align_center slds-text-heading_large slds-m-around_large">
-        {json.Title}
+        {questionnaireName}
     </h2>
 
+
+    <!-- FIRST STAGE : ADD LDS to Card -->
+    <div if:true={questionnaireQuestions} class="slds-m-around_medium">
+        <template if:true={questionnaireQuestions}>
+            <template for:each={questionnaireQuestions} for:item="question">
+                    <c-questionnaire-answer key={question.questionID} 
+                    question-id={question.questionID}
+                                            question={question}></c-questionnaire-answer>
+            </template>
+        </template>
+        <template if:true={questionnaireQuestions.error}>
+            {questionnaireQuestions.error}>
+        </template>
+    </div>
+<!--
     <template for:each={json.questions} for:item="question">
         <c-questionnaire-answer key={question.name} 
                                 question={question}>
         </c-questionnaire-answer>
     </template>
-
-
+-->
     <div class="slds-box slds-m-around_x-small">
     <div class="slds-grid slds-wrap">
         <div class="slds-size_1-of-3">
@@ -18,11 +36,13 @@
             <lightning-input label="I accept the terms of use and participation in this questionnaire" 
                                 type="checkbox"
                                 value={termsConditions} 
+                                checked={termsConditions}
                                 onchange={handleChangeTermsConditions}></lightning-input>
         </span>      
         </div>
         <div class="slds-size_2-of-3">
         <div class="slds-text-align_right">
+            {questionnaireReturnedId}<br/>
             <lightning-button variant="brand" 
                                 label="Mark Complete" 
                                 title="Mark Complete" 

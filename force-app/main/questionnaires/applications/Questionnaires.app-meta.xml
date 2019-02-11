@@ -12,5 +12,6 @@
     <tabs>Questionnaire__c</tabs>
     <tabs>Questionnaire_Returned__c</tabs>
     <tabs>Questionnaire_Console</tabs>
+    <tabs>Questionnaires_Console_LWC</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

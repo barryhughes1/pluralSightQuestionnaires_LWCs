@@ -1,6 +1,6 @@
 public with sharing class Questionnaire_Controller {
 
-	@AuraEnabled
+	@AuraEnabled(cacheable=true)
 	public static List<UserQuestionnaireObject> getQuestionnaires() {
 
 		// Object being returned
