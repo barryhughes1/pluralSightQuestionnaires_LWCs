@@ -52,7 +52,6 @@ export default class QuestionnaireCard extends LightningElement {
 
         // Creates the event with the questionnaire ID data.
         // sending a selected event
-        console.log('OBJ: ' + JSON.stringify(this.questionnaire));
         const selectedEvent = new CustomEvent('selected', { detail: this.recordId, qobj: this.questionnaire });
 
         // Dispatches the event.
@@ -62,11 +61,11 @@ export default class QuestionnaireCard extends LightningElement {
     initCardTheme() {        
         this.cardTheme = "slds-card__footer";
 		if(this.questionnaire.questionnaireStatus === "In Progress") {
-	        this.cardTheme = this.cardTheme + " slds-theme_warning";
+            this.cardTheme = this.cardTheme + " slds-theme_warning";
 		} else if(this.questionnaire.questionnaireStatus === "Submitted") {
-		    this.cardTheme = this.cardTheme + " slds-theme_success";
+            this.cardTheme = this.cardTheme + " slds-theme_success";
 		} else {
-		    this.cardTheme = this.cardTheme + " slds-theme_inverse";
+            this.cardTheme = this.cardTheme + " slds-theme_inverse";
         }
 	}
 }

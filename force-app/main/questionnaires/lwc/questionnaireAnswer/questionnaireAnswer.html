@@ -1,16 +1,19 @@
 <template>
-
+<!--
 <p>questionAnswerId: {questionAnswerId}</p>
-<p>VALUE: {value}</p>
+<p>questionId: {questionId}</p>
+<p>returnId: {returnId}</p>
+-->
 <div class="slds-box slds-theme_shade slds-m-around_large">
     <div class="slds-form slds-form_stacked">
         <fieldset class="slds-form-element">
             <div class="slds-form-element__control">
-            <lightning-radio-group name="radioGroup"
-                                    label={QuestionText}
+                <!-- NAME IS NOT ALLOWED -->
+            <lightning-radio-group label={QuestionText}
                                     options={options}
-                                    value={value}
-                                    type="radio">
+                                    value={answerValue}
+                                    type="radio"
+                                    onchange={handleFieldValueChange}>
             </lightning-radio-group>                          
             </div>
         </fieldset>
@@ -23,7 +26,8 @@
                                 label="Comments"
                                 name="comments"
                                 value={comments}
-                                placeholder="Please add any further comments">
+                                placeholder="Please add any further comments"
+                                onchange={handleFieldValueChange}>
             </lightning-input>
             </div>
         </div>
@@ -31,6 +35,9 @@
 </div>
 
 <!--
+    A better practice is to use lightning-record-form
+    IF the default look and feel is acceptable
+    in this it was not.
     <lightning-record-form
         record-id={questionAnswerId}
         object-api-name="Questionnaire_Answer__c"

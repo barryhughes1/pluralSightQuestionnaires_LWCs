@@ -33,6 +33,19 @@ export default class QuestionnaireLwc extends LightningElement {
     @track questionnaireName;
     @track questionnaireQuestions = [];
 
+    @track callbackEvent;
+
+    createreturnrec(event) {
+        this.termsConditions = false;
+        console.log('PARENT FUNCTION');
+        console.log(event.questionId);
+        this.selectedQuestionnaireId = event.questionId;
+//        console.log('selectedEvent: ' + JSON.stringify(event));
+//        this.callbackEvent = event;
+        this.createQuestionnaireReturn();
+    }
+
+
     connectedCallback() {
         console.log('connectedCallback');
         console.log(JSON.stringify(this.selectedQuestionnaireObj));
@@ -100,8 +113,12 @@ export default class QuestionnaireLwc extends LightningElement {
         const recordInput = { apiName: QUESTIONNAIRE_RETURNED_OBJECT.objectApiName, fields };
         createRecord(recordInput)
             .then(questionnaireReturned => {
+                console.log('QUESTIONNAIRE RETURN RECORD CREATED');
                 this.questionnaireReturnedId = questionnaireReturned.id;
                 this.questionnaireReturned = questionnaireReturned;
+//                console.log(JSON.stringify(questionnaireReturned));
+//                console.log('this.questionnaireReturnedId: ' + this.questionnaireReturnedId);
+                // Toast
                 this.dispatchEvent(
                     new ShowToastEvent({
                         title: 'Success',
@@ -132,7 +149,6 @@ export default class QuestionnaireLwc extends LightningElement {
             },
         };
         updateRecord(record)
-            // eslint-disable-next-line no-unused-vars
             .then(() => {
                 this.dispatchEvent(
                     new ShowToastEvent({
@@ -151,7 +167,6 @@ export default class QuestionnaireLwc extends LightningElement {
                     }),
                 );
             });
-          
     }
 
 

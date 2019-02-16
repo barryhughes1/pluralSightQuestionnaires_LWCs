@@ -1,21 +1,23 @@
 <template>
-
+<!--
     <p>selectedQuestionnaireId: {selectedQuestionnaireId}</p>
     <p>selectedQuestionnaireId: {selectedQuestionnaireId}</p>
+    <p>{questionnaireReturnedId}</p>
     <p>selectedQuestionnaire: {selectedQuestionnaire}</p>
 
     <h2 class="slds-text-align_center slds-text-heading_large slds-m-around_large">
         {questionnaireName}
     </h2>
-
-
+-->
     <!-- FIRST STAGE : ADD LDS to Card -->
     <div if:true={questionnaireQuestions} class="slds-m-around_medium">
         <template if:true={questionnaireQuestions}>
             <template for:each={questionnaireQuestions} for:item="question">
                     <c-questionnaire-answer key={question.questionID} 
-                    question-id={question.questionID}
-                                            question={question}></c-questionnaire-answer>
+                                            question-id={question.questionID}
+                                            return-id={questionnaireReturnedId}
+                                            question={question}
+                                            oncreatereturn={createreturnrec}></c-questionnaire-answer>
             </template>
         </template>
         <template if:true={questionnaireQuestions.error}>
@@ -42,7 +44,6 @@
         </div>
         <div class="slds-size_2-of-3">
         <div class="slds-text-align_right">
-            {questionnaireReturnedId}<br/>
             <lightning-button variant="brand" 
                                 label="Mark Complete" 
                                 title="Mark Complete" 
