@@ -83,15 +83,22 @@ export default class QuestionnaireAnswer extends LightningElement {
   }
 
    renderedCallback() {
-      console.log('renderedCallback!!!');
+      console.log('ANS renderedCallback!!!');
+      console.log('this.returnId: ' + this.returnId);
+      console.log('this.QuestionnaireReturnedId: ' + this.QuestionnaireReturnedId);
+//      this.QuestionnaireReturnedId = this.returnId;
+//      if((this.returnId) && (!this.QuestionnaireReturnedId))
       if((this.returnId) && (!this.QuestionnaireReturnedId)) {
+         console.log('in loop');
          this.QuestionnaireReturnedId = this.returnId;
+         console.log('this.createAnswerRecord: ' + this.createAnswerRecord);
          if(this.createAnswerRecord) {
             console.log('Will now create the answer record');
             this.createAnswerRecord = false;
             this.processQuestionnaireAnswerRecord();
          }   
       }
+      console.log('end loop');
    }
 
 
@@ -162,9 +169,27 @@ export default class QuestionnaireAnswer extends LightningElement {
 
       const recordInput = { apiName: QUESTIONNAIRE_ANSWER_OBJECT.objectApiName, fields };
       createRecord(recordInput)
-            .then(QuestionnaireAnswer => {
-                this.questionAnswerId = QuestionnaireAnswer.id;
-                this.Questionnaire_Answer__c = QuestionnaireAnswer;
+            .then(QuestionnaireAns => {
+                this.questionAnswerId = QuestionnaireAns.id;
+                this.Questionnaire_Answer__c = QuestionnaireAns;
+
+               // LAST PIECE TO EXPLAIN - Updating the initial JSON
+               // Creates the event with the new questionnaire Return ID
+               // sending an update event to the parent questionnaireList component
+               console.log('Creating Answr ==> updating list');
+               console.log('this.QuestionnaireQuestionId: ' +  this.QuestionnaireQuestionId);
+               console.log('this.questionAnswerId: ' +  this.questionAnswerId);
+               const updateEvent = new CustomEvent('updatequestionnaire', { 
+                  detail: {
+                     operation: 'New Answer',
+                     questionID : this.QuestionnaireQuestionId,
+                     newQuestionnaireAnswerID: this.questionAnswerId
+                  },
+                  bubbles: true
+               });        
+               // Dispatches the event.
+               this.dispatchEvent(updateEvent);     
+
                 this.dispatchEvent(
                     new ShowToastEvent({
                         title: 'Success',

@@ -38,8 +38,8 @@ export default class QuestionnaireLwc extends LightningElement {
     createreturnrec(event) {
         this.termsConditions = false;
         console.log('PARENT FUNCTION');
-        console.log(event.questionId);
-        this.selectedQuestionnaireId = event.questionId;
+//        console.log(event.questionId);
+//        this.selectedQuestionnaireId = event.questionId;
 //        console.log('selectedEvent: ' + JSON.stringify(event));
 //        this.callbackEvent = event;
         this.createQuestionnaireReturn();
@@ -47,7 +47,7 @@ export default class QuestionnaireLwc extends LightningElement {
 
 
     connectedCallback() {
-        console.log('connectedCallback');
+        console.log('connectedCallback in Return');
         console.log(JSON.stringify(this.selectedQuestionnaireObj));
         if(this.selectedQuestionnaireObj) {
             this.questionnaireReturnedId = this.selectedQuestionnaireObj.questionnaireReturnedId;
@@ -65,19 +65,12 @@ export default class QuestionnaireLwc extends LightningElement {
             console.log('===================');
             console.log(JSON.stringify(result.data));
             console.log('SUCCESS');
-*/            this.questionnaireReturned = result.data;
-//            console.log('SUCCESS 2');
-//            console.log(JSON.stringify(this.questionnaireReturned.fields));
-//            this.questionnaireReturnedId = this.questionnaireReturned.fields.Id.value;
+*/
+            this.questionnaireReturned = result.data;
             this.termsConditions = this.questionnaireReturned.fields.Terms_and_Conditions__c.value;
-//            console.log('this.termsConditions: ' + this.termsConditions);
-//            console.log('SUCCESS 3');
             this.questionnaireSubmitted = this.questionnaireReturned.fields.Submitted__c.value;
-            console.log('SUCCESS 4');
             this.error = undefined;
-            console.log('SUCCESS 5');
             this.questionnaireReturnedReady = true;
-            console.log('SUCCESS 6');
         } else if (!this.questionnaireReturnedId) {
             console.log('===================');
             console.log('No ID Loop');
@@ -105,6 +98,7 @@ export default class QuestionnaireLwc extends LightningElement {
     createQuestionnaireReturn() {
         const fields = {};
         console.log(this.termsConditions);
+        console.log(this.selectedQuestionnaireId);
         fields[QUESTIONNAIRE_FIELD.fieldApiName] = this.selectedQuestionnaireId;
         fields[TANDC_FIELD.fieldApiName] = this.termsConditions;
         fields[SUBMITTED_FIELD.fieldApiName] = this.questionnaireSubmitted;
@@ -114,8 +108,31 @@ export default class QuestionnaireLwc extends LightningElement {
         createRecord(recordInput)
             .then(questionnaireReturned => {
                 console.log('QUESTIONNAIRE RETURN RECORD CREATED');
+                // this.selectedQuestionnaireObj.questionnaireReturnedId = questionnaireReturned.id;
                 this.questionnaireReturnedId = questionnaireReturned.id;
+                console.log('QUESTIONNAIRE RETURN RECORD CREATED 1');
                 this.questionnaireReturned = questionnaireReturned;
+                console.log(JSON.stringify(this.questionnaireQuestions));
+//                this.questionnaireQuestions =  this.selectedQuestionnaireObj.questionAnswerList;
+//                this.questionnaireQuestions.questionnaireReturnedId = questionnaireReturned.id;
+//                console.log('this.questionnaireQuestions.questionnaireReturnedId: ' + this.questionnaireQuestions.questionnaireReturnedId);
+
+              // LAST PIECE TO EXPLAIN - Updating the initial JSON
+               // Creates the event with the new questionnaire Return ID
+               // sending an update event to the parent questionnaireList component
+               console.log('QUESTIONNAIRE RETURN RECORD CREATED 2');
+               console.log('Creating Return ==> updating list');
+               console.log('this.questionnaireReturnedId: ' +  this.questionnaireReturnedId);
+               const updateEvent = new CustomEvent('updatequestionnaire', { 
+                detail: {
+                    operation: 'New Return',
+                    newQuestionnaireReturnID: this.questionnaireReturnedId,
+                   },
+                 bubbles: true                   
+               });        
+               // Dispatches the event.
+               this.dispatchEvent(updateEvent);    
+
 //                console.log(JSON.stringify(questionnaireReturned));
 //                console.log('this.questionnaireReturnedId: ' + this.questionnaireReturnedId);
                 // Toast
@@ -128,6 +145,7 @@ export default class QuestionnaireLwc extends LightningElement {
                 );
             })
             .catch(error => {
+                console.log(JSON.stringify(error));
                 this.dispatchEvent(
                     new ShowToastEvent({
                         title: 'Error creating record',
@@ -169,11 +187,35 @@ export default class QuestionnaireLwc extends LightningElement {
             });
     }
 
+/*
+    handleUpdateQuestionnaire(event) {
+        console.log('===> handleUpdateQuestionnaire in lwc');
 
+        console.log(JSON.stringify(event.detail));
+        console.log('operation: ' + event.detail.operation);
+        if(event.detail.operation === 'New Answer') {
+            console.log('New Answer LOOP');
+            console.log('questionID: ' + event.detail.questionID);
+            console.log('newQuestionnaireAnswerID: ' + event.detail.newQuestionnaireAnswerID);
+        }
 
+        // this.handleUpdateQuestionnaireList();
 
+    }
 
+    handleUpdateQuestionnaireList() {
 
+               // LAST PIECE TO EXPLAIN - Updating the initial JSON
+               // Creates the event with the new questionnaire Return ID
+               // sending an update event to the parent questionnaireList component
+               const updateEvent = new CustomEvent('updatequestionnairelist', { 
+                Message : 'update list',
+                bubbles: true
+             });        
+             // Dispatches the event.
+             this.dispatchEvent(updateEvent);           
+    }
+*/
     json = {
         "Title": "UAT Evaluation",
         "questions": [

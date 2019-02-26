@@ -16,6 +16,7 @@ export default class QuestionnaireCard extends LightningElement {
     @track name;
     @track description;
     @track questionsToAnswer;
+    @track questionsAnswered;
     @track cardTheme = "slds-card__footer";
     @track status;
     @track error;
@@ -26,6 +27,7 @@ export default class QuestionnaireCard extends LightningElement {
     @wire(getRecord, { recordId: '$recordId', fields: FIELDS })
     questionnaireRecord(result) {
         if (result.data) {
+            console.log('CARD record');
             this.wiredQuestionnaireResult = result;
             console.log(JSON.stringify(this.questionnaire));
             console.log('SUCCESS');
@@ -33,18 +35,57 @@ export default class QuestionnaireCard extends LightningElement {
             console.log(JSON.stringify(this.questionnaireRec.fields));
             this.name = this.questionnaireRec.fields.Name.value;
             this.description = this.questionnaireRec.fields.Description__c.value;
-            this.questionsToAnswer = this.questionnaireRec.fields.Total_Questions__c.value;
+            // this.questionsToAnswer = this.questionnaireRec.fields.Total_Questions__c.value;
             this.status = this.questionnaire.questionnaireStatus;
-            this.cardTheme = "slds-card__footer slds-theme_inverse";
+//            this.cardTheme = "slds-card__footer slds-theme_inverse";
+            this.setCardTheme();
             this.error = undefined;
+            this.setQuestionsAskedAndAnswered();
+
         } else if (result.error) {
             console.log('ERROR');
             this.error = result.error;
             this.questionnaireRec = undefined;
         }
     }
+/*
+    @track allowRenderedCallback = true;
 
+    renderedCallback() {
+        console.log('Questionnaire Card renderedCallback!!!');
+        if(this.allowRenderedCallback) {
+            this.allowRenderedCallback = false;
+            this.setCardTheme();
+            this.setQuestionsAskedAndAnswered();
+        } else {
+            this.allowRenderedCallback = false;
+        }
 
+    }
+*/
+
+    setCardTheme() {        
+        this.cardTheme = "slds-card__footer";
+		if(this.questionnaire.questionnaireStatus === "In Progress") {
+            this.cardTheme = this.cardTheme + " slds-theme_warning";
+		} else if(this.questionnaire.questionnaireStatus === "Submitted") {
+            this.cardTheme = this.cardTheme + " slds-theme_success";
+		} else {
+            this.cardTheme = this.cardTheme + " slds-theme_inverse";
+        }
+    }
+    
+    setQuestionsAskedAndAnswered() {
+        this.questionsToAnswer = this.questionnaire.questionAnswerList.length;
+        let questionsAnswered = 0;
+        for (let j = 0; j < this.questionsToAnswer; j++) {
+            if(this.questionnaire.questionAnswerList[j].hasOwnProperty('answerID')) {
+                console.log('ADDING TO ANSERS GIVEN');
+                questionsAnswered = questionsAnswered + 1;
+            }
+        }
+        this.questionsAnswered = questionsAnswered;
+    }
 
     openQuestionnaire(event) {
         // Prevents the anchor element from navigating to a URL.
@@ -57,15 +98,4 @@ export default class QuestionnaireCard extends LightningElement {
         // Dispatches the event.
         this.dispatchEvent(selectedEvent);
     }
-
-    initCardTheme() {        
-        this.cardTheme = "slds-card__footer";
-		if(this.questionnaire.questionnaireStatus === "In Progress") {
-            this.cardTheme = this.cardTheme + " slds-theme_warning";
-		} else if(this.questionnaire.questionnaireStatus === "Submitted") {
-            this.cardTheme = this.cardTheme + " slds-theme_success";
-		} else {
-            this.cardTheme = this.cardTheme + " slds-theme_inverse";
-        }
-	}
 }

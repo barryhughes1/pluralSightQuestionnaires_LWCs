@@ -30,10 +30,15 @@
 </template>
 -->
 <!-- SECOND STAGE : ADD selected-questionnaire-id -->
+<div onupdatequestionnaire={handleUpdateQuestionnaire}>
 <c-questionnaire-lwc if:true={showQuestionnaire} 
                     selected-questionnaire-id={selectedQuestionnaireId} 
                     selected-questionnaire-obj={selectedQuestionnaire}
-                    public-prop={selectedQuestionnaire}
-                    onclose={closeQuestionnaire}></c-questionnaire-lwc>
+                    onclose={closeQuestionnaire}
+                    ></c-questionnaire-lwc>
+                    <!--
+onupdatequestionnairelist={handleUpdateQuestionnaireList}
+                    -->
+</div>
 
 </template>

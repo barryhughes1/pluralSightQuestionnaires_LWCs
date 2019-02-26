@@ -17,7 +17,8 @@
                                             question-id={question.questionID}
                                             return-id={questionnaireReturnedId}
                                             question={question}
-                                            oncreatereturn={createreturnrec}></c-questionnaire-answer>
+                                            oncreatereturn={createreturnrec}
+                                            ></c-questionnaire-answer>
             </template>
         </template>
         <template if:true={questionnaireQuestions.error}>
@@ -44,6 +45,7 @@
         </div>
         <div class="slds-size_2-of-3">
         <div class="slds-text-align_right">
+            {questionnaireReturnedId}<br/>
             <lightning-button variant="brand" 
                                 label="Mark Complete" 
                                 title="Mark Complete" 
