@@ -85,16 +85,16 @@ export default class QuestionnaireList extends LightningElement {
         console.log('closeQuestionnaire called');
 
         // If a Return or Answer record is created we need to refresh and recall the Apex call
-        if((this.operation === 'New Answer') || (this.operation === 'New Return')) {
+        if((this.operation === 'New Answer') || (this.operation === 'New Return') || (this.operation === 'Return Submitted')) {
             refreshApex(this.questionnaires);
             this.operation = '';
             getQuestionnaires()
-            .then(result => {
-                this.questionnaires = result;
-            })
-            .catch(error => {
-                console.log(error);
-            });                
+                .then(result => {
+                    this.questionnaires = result;
+                })
+                .catch(error => {
+                    console.log(error);
+                });                
         }
 
         this.selectedQuestionnaireId = '';

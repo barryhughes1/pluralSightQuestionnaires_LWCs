@@ -275,6 +275,53 @@ export default class QuestionnaireLwc extends LightningElement {
         ];
     }
 
+    markQuestionnaireComplete() {
+
+        let record = {
+            fields: {
+                Id: this.questionnaireReturnedId,
+                Questionnaire__c: this.selectedQuestionnaireId,
+                Terms_and_Conditions__c:this.termsConditions,
+                Submitted__c:true,
+                Answered_By__c:this.answeredBy,
+            },
+        };
+        updateRecord(record)
+            .then(() => {
+
+                const updateEvent = new CustomEvent('updatequestionnaire', { 
+                    detail: {
+                        operation: 'Return Submitted',
+                        newQuestionnaireReturnID: this.questionnaireReturnedId,
+                    },
+                    bubbles: true                   
+                });        
+                // Dispatches the event.
+                this.dispatchEvent(updateEvent);   
+        
+                this.dispatchEvent(
+                    new ShowToastEvent({
+                        title: 'Success',
+                        message: 'Questionnaire Submitted',
+                        variant: 'success',
+                    }),
+                );
+
+                // Close the Questionnaire
+                this.dispatchEvent(new CustomEvent('close'));
+            })
+            .catch(error => {
+                this.dispatchEvent(
+                    new ShowToastEvent({
+                        title: 'Error updating record',
+                        message: error.message.body,
+                        variant: 'error',
+                    }),
+                );
+            });
+
+    }
+
     closeQuestionnaire() {
         this.dispatchEvent(new CustomEvent('close'));
     }

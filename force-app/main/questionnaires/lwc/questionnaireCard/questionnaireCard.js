@@ -39,8 +39,8 @@ export default class QuestionnaireCard extends LightningElement {
             this.status = this.questionnaire.questionnaireStatus;
 //            this.cardTheme = "slds-card__footer slds-theme_inverse";
             this.setCardTheme();
-            this.error = undefined;
             this.setQuestionsAskedAndAnswered();
+            this.error = undefined;
 
         } else if (result.error) {
             console.log('ERROR');
@@ -48,35 +48,34 @@ export default class QuestionnaireCard extends LightningElement {
             this.questionnaireRec = undefined;
         }
     }
-/*
-    @track allowRenderedCallback = true;
 
     renderedCallback() {
         console.log('Questionnaire Card renderedCallback!!!');
-        if(this.allowRenderedCallback) {
-            this.allowRenderedCallback = false;
-            this.setCardTheme();
-            this.setQuestionsAskedAndAnswered();
-        } else {
-            this.allowRenderedCallback = false;
-        }
-
+        this.setCardTheme();
+        this.setQuestionsAskedAndAnswered();
     }
-*/
 
-    setCardTheme() {        
-        this.cardTheme = "slds-card__footer";
+    setCardTheme() {  
+        let cardTheme = "slds-card__footer";
 		if(this.questionnaire.questionnaireStatus === "In Progress") {
-            this.cardTheme = this.cardTheme + " slds-theme_warning";
+            cardTheme = cardTheme + " slds-theme_warning";
 		} else if(this.questionnaire.questionnaireStatus === "Submitted") {
-            this.cardTheme = this.cardTheme + " slds-theme_success";
+            cardTheme = cardTheme + " slds-theme_success";
 		} else {
-            this.cardTheme = this.cardTheme + " slds-theme_inverse";
+            cardTheme = cardTheme + " slds-theme_inverse";
         }
+        if(this.cardTheme != cardTheme) {
+            this.cardTheme = cardTheme;
+        }
+
     }
     
+
     setQuestionsAskedAndAnswered() {
-        this.questionsToAnswer = this.questionnaire.questionAnswerList.length;
+        if(this.questionsToAnswer != this.questionnaire.questionAnswerList.length) {
+            this.questionsToAnswer = this.questionnaire.questionAnswerList.length;
+        }
+
         let questionsAnswered = 0;
         for (let j = 0; j < this.questionsToAnswer; j++) {
             if(this.questionnaire.questionAnswerList[j].hasOwnProperty('answerID')) {
@@ -84,7 +83,9 @@ export default class QuestionnaireCard extends LightningElement {
                 questionsAnswered = questionsAnswered + 1;
             }
         }
-        this.questionsAnswered = questionsAnswered;
+        if(this.questionsAnswered != questionsAnswered) {
+            this.questionsAnswered = questionsAnswered;
+        }
     }
 
     openQuestionnaire(event) {
