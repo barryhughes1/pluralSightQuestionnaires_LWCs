@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agree_with_Question__c</fullName>
+    <externalId>false</externalId>
+    <label>Agree with Question</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Strongly Disagree</fullName>
+                <default>false</default>
+                <label>Strongly Disagree</label>
+            </value>
+            <value>
+                <fullName>Disagree</fullName>
+                <default>false</default>
+                <label>Disagree</label>
+            </value>
+            <value>
+                <fullName>Undecided</fullName>
+                <default>false</default>
+                <label>Undecided</label>
+            </value>
+            <value>
+                <fullName>Agree</fullName>
+                <default>false</default>
+                <label>Agree</label>
+            </value>
+            <value>
+                <fullName>Strongly Agree</fullName>
+                <default>false</default>
+                <label>Strongly Agree</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,56 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" 
+				access="global"
+				controller="Questionnaire_Controller" >
+    
+    <!-- 1. Attributes -->
+    <aura:attribute name="pageTitle" 
+                    type="String"
+                    default="Questionnaires"
+                    description="Title of the List of Questionnaires" />
+    <aura:attribute name="questionnaires" 
+                    type="Object[]"
+                    default="[]"
+                    description="Title of the List of Questionnaires" />
+	<aura:attribute name="selectedQuestionnaireObj"
+					type="Object"
+					default=""
+					description="The Questionnaire Object to be opened" />
+	<aura:attribute name="showMarkup"
+					type="Boolean"
+					default="false"
+                    access="private"
+					description="Changed to true when init Apex class is complete" />
+    
+    <!-- 2. Handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <!-- 3. Events -->
+    
+    <!-- 4. Methods -->
+    
+    <!-- 5. Data Service Components -->  
+    
+    <!-- 6. Layout -->	
+    <aura:if isTrue="{!v.showMarkup}">    
+	<div class="{! empty(v.selectedQuestionnaireObj) ? 'slds-m-top_large' : 'slds-m-top_large slds-hide' }">    
+    <h2 class="slds-text-align_center slds-text-heading_large slds-m-around_large">
+        {!v.pageTitle}
+    </h2>
+        
+	<!-- {% for questionnaire in questionnaires %} -->
+	<aura:if isTrue="{! !empty(v.questionnaires) }">
+		<aura:iteration items="{!v.questionnaires}" var="questionnaire">
+			<c:Questionnaire_Card QuestionnaireObj="{!questionnaire}"
+                                  selectedQuestionnaireObj="{!v.selectedQuestionnaireObj}" />
+		</aura:iteration>
+	</aura:if>
+	<!-- {% endfor %} -->
+    </div>
+    
+	<aura:if isTrue="{! !empty(v.selectedQuestionnaireObj) }">
+	<c:Questionnaire selectedQuestionnaireObj="{!v.selectedQuestionnaireObj}"
+					 pageTitle="{!v.selectedQuestionnaireObj.questionnaireName}" />	
+	</aura:if>
+    </aura:if>
+
+</aura:component>
