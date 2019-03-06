@@ -21,17 +21,10 @@ export default class QuestionnaireCard extends LightningElement {
     @track status;
     @track error;
 
-    /** Wired Apex result so it can be refreshed programmatically */
-    wiredQuestionnaireResult;
-
     @wire(getRecord, { recordId: '$recordId', fields: FIELDS })
     questionnaireRecord(result) {
         if (result.data) {
-            console.log('CARD record');
-            this.wiredQuestionnaireResult = result;
             this.questionnaireRec = result.data;
-            console.log(JSON.stringify(this.questionnaire));
-            console.log(JSON.stringify(this.questionnaireRec.fields));
             this.name = this.questionnaireRec.fields.Name.value;
             this.description = this.questionnaireRec.fields.Description__c.value;
             this.status = this.questionnaire.questionnaireStatus;
@@ -42,12 +35,6 @@ export default class QuestionnaireCard extends LightningElement {
             this.error = result.error;
             this.questionnaireRec = undefined;
         }
-    }
-
-    renderedCallback() {
-        console.log('Questionnaire Card renderedCallback');
-        this.setCardTheme();
-        this.setQuestionsAskedAndAnswered();
     }
 
     setCardTheme() {  

@@ -5,18 +5,6 @@
         "paths": {
             "c/hello-world": [
                 "../../default/lwc/helloWorld/helloWorld.js"
-            ],
-            "c/questionnaire-answer": [
-                "questionnaireAnswer/questionnaireAnswer.js"
-            ],
-            "c/questionnaire-card": [
-                "questionnaireCard/questionnaireCard.js"
-            ],
-            "c/questionnaire-list": [
-                "questionnaireList/questionnaireList.js"
-            ],
-            "c/questionnaire-lwc": [
-                "questionnaireLwc/questionnaireLwc.js"
             ]
         }
     },

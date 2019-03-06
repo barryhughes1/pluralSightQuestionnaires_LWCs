@@ -1,15 +1,8 @@
 public with sharing class Questionnaire_Controller {
 
-	@AuraEnabled(cacheable=true)
-	public static List<UserQuestionnaireObject> getQuestionnairesLWC(String dateTimeString) {
-		return Questionnaire_Controller.getQuestionnaires();
-	}
-
-	@AuraEnabled(cacheable=true)
+	@AuraEnabled
 	public static List<UserQuestionnaireObject> getQuestionnaires() {
 
-        System.debug('getQuestionnaires called');
-        
 		// Object being returned
 		List<UserQuestionnaireObject> result = new List<UserQuestionnaireObject>();
 

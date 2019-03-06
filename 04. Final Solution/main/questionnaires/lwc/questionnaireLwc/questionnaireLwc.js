@@ -16,26 +16,17 @@ const FIELDS = [
     'Questionnaire_Returned__c.Answered_By__c',
 ];
 
-export default class QuestionnaireLwc extends LightningElement {
+export default class questionnaireLwc extends LightningElement {
 
     @api selectedQuestionnaireId;
     @api selectedQuestionnaireObj;
 
-    @track questionnaireReturnedReady = false;
-
     @track questionnaireReturnedId;
     @track questionnaireReturned;
-
-    @track termsConditions = false;
-    @track questionnaireSubmitted = false;
-    answeredBy = Id;
-
     @track questionnaireName;
     @track questionnaireQuestions = [];
 
-    @track callbackEvent;
-
-
+    // Function called when rendering is complete
     connectedCallback() {
         console.log('connectedCallback in c-questionnaire-lwc');
         if(this.selectedQuestionnaireObj) {
@@ -45,41 +36,37 @@ export default class QuestionnaireLwc extends LightningElement {
         }
     }
 
-    @wire(getRecord, { recordId: '$questionnaireReturnedId', fields: FIELDS })
-    questionnaireRecord(result) {
-        if (result.data) {
-            this.questionnaireReturned = result.data;
-            this.termsConditions = this.questionnaireReturned.fields.Terms_and_Conditions__c.value;
-            this.questionnaireSubmitted = this.questionnaireReturned.fields.Submitted__c.value;
-            this.error = undefined;
-            this.questionnaireReturnedReady = true;
-        } else if (!this.questionnaireReturnedId) {
-            console.log('No Questionnaire Return ID');
-            this.questionnaireReturnedReady = true;
-        } else if (result.error) {
-            console.log('ERROR');
-            this.error = result.error;
-            this.questionnaireReturned = undefined;
-        }
+    // Close Questionnaire button function
+    closeQuestionnaire() {
+        this.dispatchEvent(new CustomEvent('close'));
     }
 
 
+    // Terms and Conditions Checkbox value and binding function
+    // when selected the Questionnaire Return record should be inserted
+    @track termsConditions = false;
     handleChangeTermsConditions(event) {
         this.termsConditions = event.target.checked;
-        if(this.questionnaireReturnedId) {
-            this.updateQuestionnaireReturn();
-        } else {
+        console.log('handleChangeTermsConditions');
+        if(!this.questionnaireReturnedId) {
+            console.log('calling createQuestionnaireReturn');
             this.createQuestionnaireReturn();
+        } else {
+            console.log('calling updateQuestionnaireReturn');
+            this.updateQuestionnaireReturn();
         }
-    }
+    }    
 
+    @track questionnaireSubmitted = false;
+
+    // function to create Questionnaire Return
     createQuestionnaireReturn() {
         const fields = {};
         if(!this.termsConditions) this.termsConditions = false;
         fields[QUESTIONNAIRE_FIELD.fieldApiName] = this.selectedQuestionnaireId;
         fields[TANDC_FIELD.fieldApiName] = this.termsConditions;
         fields[SUBMITTED_FIELD.fieldApiName] = this.questionnaireSubmitted;
-        fields[ANSWERED_BY_FIELD.fieldApiName] = this.answeredBy;
+        fields[ANSWERED_BY_FIELD.fieldApiName] = Id;  // from import
 
         const recordInput = { apiName: QUESTIONNAIRE_RETURNED_OBJECT.objectApiName, fields };
         createRecord(recordInput)
@@ -91,11 +78,9 @@ export default class QuestionnaireLwc extends LightningElement {
 
                 this.questionnaireReturnedId = questionnaireReturned.id;
                 this.questionnaireReturned = questionnaireReturned;
-
-               // LAST PIECE TO EXPLAIN - Updating the initial JSON
-               // Creates the event with the new questionnaire Return ID
+  
                // sending an update event to the parent questionnaireList component
-               const updateEvent = new CustomEvent('updatequestionnaire', { 
+               const updateEvent = new CustomEvent('updatequestionnairelist', { 
                 detail: {
                     operation: 'New Return',
                     newQuestionnaireReturnID: this.questionnaireReturnedId,
@@ -104,6 +89,7 @@ export default class QuestionnaireLwc extends LightningElement {
                });        
                // Dispatches the event.
                this.dispatchEvent(updateEvent);    
+              
 
                // Toast
                 this.dispatchEvent(
@@ -125,6 +111,25 @@ export default class QuestionnaireLwc extends LightningElement {
             });
     }
 
+    @wire(getRecord, { recordId: '$questionnaireReturnedId', fields: FIELDS })
+    questionnaireRecord(result) {
+        if (result.data) {
+            console.log('Questionnaire Return LDS retrieved');
+            this.questionnaireReturned = result.data;
+            this.termsConditions = this.questionnaireReturned.fields.Terms_and_Conditions__c.value;
+            this.questionnaireSubmitted = this.questionnaireReturned.fields.Submitted__c.value;
+            this.error = undefined;
+            this.questionnaireReturnedReady = true;
+        } else if (!this.questionnaireReturnedId) {
+            console.log('No Questionnaire Return ID');
+            this.questionnaireReturnedReady = true;
+        } else if (result.error) {
+            console.log('ERROR');
+            this.error = result.error;
+            this.questionnaireReturned = undefined;
+        }
+    }
+
     updateQuestionnaireReturn() {
         let record = {
             fields: {
@@ -132,7 +137,7 @@ export default class QuestionnaireLwc extends LightningElement {
                 Questionnaire__c: this.selectedQuestionnaireId,
                 Terms_and_Conditions__c:this.termsConditions,
                 Submitted__c:this.questionnaireSubmitted,
-                Answered_By__c:this.answeredBy,
+                Answered_By__c:Id,
             },
         };
         updateRecord(record)
@@ -155,69 +160,19 @@ export default class QuestionnaireLwc extends LightningElement {
                 );
             });
     }
-
-    json = {
-        "Title": "UAT Evaluation",
-        "questions": [
-            {
-            "name": "QUEST-0001",
-            "question__c": "1. I didn't experience issues in my database related to the performance of software, hardware or network.",
-            "help_text__c": "This question relates to the main database as well as the CMS connector.",
-            "options": "AgreeValues",
-            "comment_available__c": "Yes"
-            },
-            {
-            "name": "QUEST-0001",
-            "question__c": "2. The combination of the UPK \"Try It\" mode and the business processes will be sufficient documentation for me to perform my day to day activities after the upgrade is complete",
-            "help_text__c": "This question relates to the main database as well as the CMS connector.",
-            "options": "AgreeValues",
-            "comment_available__c": "Yes"
-            },
-            {
-            "name": "QUEST-0001",
-            "question__c": "3. The tests conducted during UAT and in homework were representative of the major business processes my institution will perform on a recurring basis.",
-            "help_text__c": "This question relates to the main database as well as the CMS connector.",
-            "options": "AgreeValues",
-            "comment_available__c": "Yes"
-            },
-            {
-            "name": "QUEST-0001",
-            "question__c": "4. I didn't experience issues in my database related to the performance of software, hardware or network.",
-            "help_text__c": "This question relates to the main database as well as the CMS connector.",
-            "options": "AgreeValues",
-            "comment_available__c": "Yes"
-            },
-            {
-            "name": "QUEST-0001",
-            "question__c": "5. I didn't experience issues in my database related to the performance of software, hardware or network.",
-            "help_text__c": "This question relates to the main database as well as the CMS connector.",
-            "options": "AgreeValues",
-            "comment_available__c": "Yes"
-            },
-            {
-            "name": "QUEST-0001",
-            "question__c": "6. I didn't experience issues in my database related to the performance of software, hardware or network.",
-            "help_text__c": "This question relates to the main database as well as the CMS connector.",
-            "options": "AgreeValues",
-            "comment_available__c": "Yes"
-            }
-        ]
-        };
-
-
-    get options() {
-        return [
-            { label: 'Strongly Disagree', value: 'Strongly Disagree' },
-            { label: 'Disagree', value: 'Disagree' },
-            { label: 'No Opinion', value: 'No Opinion' },
-            { label: 'Agree', value: 'Agree' },
-            { label: 'Strongly Agree', value: 'Strongly Agree' }
-        ];
-    }
+    
 
     markQuestionnaireComplete() {
         if(!this.termsConditions) {
-            alert("You must agree to terms and conditions before submitting");
+
+            this.dispatchEvent(
+                new ShowToastEvent({
+                    title: 'Warning',
+                    message: 'You must agree to terms and conditions before submitting',
+                    variant: 'warning',
+                }),
+            );
+
         } else {
             let record = {
                 fields: {
@@ -231,7 +186,7 @@ export default class QuestionnaireLwc extends LightningElement {
             updateRecord(record)
                 .then(() => {
     
-                    const updateEvent = new CustomEvent('updatequestionnaire', { 
+                    const updateEvent = new CustomEvent('updatequestionnairelist', { 
                         detail: {
                             operation: 'Return Submitted',
                             newQuestionnaireReturnID: this.questionnaireReturnedId,
@@ -250,7 +205,7 @@ export default class QuestionnaireLwc extends LightningElement {
                     );
     
                     // Close the Questionnaire
-                    this.dispatchEvent(new CustomEvent('close'));
+                    this.closeQuestionnaire();
                 })
                 .catch(error => {
                     this.dispatchEvent(
@@ -263,9 +218,4 @@ export default class QuestionnaireLwc extends LightningElement {
                 });
         }
     }
-
-    closeQuestionnaire() {
-        this.dispatchEvent(new CustomEvent('close'));
-    }
-
 }

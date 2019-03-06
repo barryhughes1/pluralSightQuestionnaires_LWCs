@@ -26,6 +26,7 @@ export default class QuestionnaireAnswer extends LightningElement {
    @api questionId;  // ID of the Question__c being answered
    @api question;    // JSON of the Question__c being answered
    @api returnId;    // ID of the Questionnaire Return (ie) record the user has answered
+   @api completed;   // Has the Questionnaire Return (ie) record been Marked Complete by the user
 
    @track Questionnaire_Question__c;
    @track QuestionText;
@@ -48,6 +49,16 @@ export default class QuestionnaireAnswer extends LightningElement {
            this.error = result.error;
        }
    }
+
+   get options() {
+        return [
+           {'label': 'Strongly Disagree', 'value': 'Strongly Disagree'},
+           {'label': 'Disagree', 'value': 'Disagree'},
+           {'label': 'Undecided', 'value': 'Undecided'},
+           {'label': 'Agree', 'value': 'Agree'},
+           {'label': 'Strongly Agree', 'value': 'Strongly Agree'}
+        ];
+    }
 
    @track questionAnswerId;
    @track Questionnaire_Answer__c;
@@ -79,71 +90,74 @@ export default class QuestionnaireAnswer extends LightningElement {
       }      
       this.QuestionnaireReturnedId = this.returnId;
   }
-
-   renderedCallback() {
-      console.log('ANS renderedCallback!!!');
-//      console.log('this.returnId: ' + this.returnId);
-      console.log('this.QuestionnaireReturnedId: ' + this.QuestionnaireReturnedId);
-//      this.QuestionnaireReturnedId = this.returnId;
-//      if((this.returnId) && (!this.QuestionnaireReturnedId))
-      if((this.returnId) && (!this.QuestionnaireReturnedId)) {
-         this.QuestionnaireReturnedId = this.returnId;
-         if(this.createAnswerRecord) {
-            console.log('Will now create the answer record');
-            this.createAnswerRecord = false;
-            this.processQuestionnaireAnswerRecord();
-         }   
-      }
-   }
-
-
-   processQuestionnaireAnswerRecord() {
-      if(this.questionAnswerId) {
-         this.updateQuestionnaireAnswer();
-      } else {
-         this.createQuestionnaireAnswer();
-      }         
-   }
   
+  @track createAnswerRecord;
+
+  renderedCallback() {
+    console.log('ANS renderedCallback!!!');
+    console.log('this.returnId: ' + this.returnId);
+    console.log('this.QuestionnaireReturnedId: ' + this.QuestionnaireReturnedId);
+    // Have we received a new returnId?
+    if((this.returnId) && (!this.QuestionnaireReturnedId)) {
+       this.QuestionnaireReturnedId = this.returnId;
+        // Did we flag that we are trying to save an Answer??
+        if(this.createAnswerRecord) {
+          console.log('Will now create the answer record');
+          this.createAnswerRecord = false;  // revert property
+          this.processQuestionnaireAnswerRecord();
+       }   
+    }
+ }
 
   handleFieldValueChange(event) {
-      this.createAnswerRecord = false;
-      if (event.target.label === 'Comments') {
-         this.comments = event.target.value;
-      } else {
-         this.answerValue = event.target.value;
-      }
+    this.createAnswerRecord = false;
+    if (event.target.label === 'Comments') {
+       this.comments = event.target.value;
+    } else {
+       this.answerValue = event.target.value;
+    }
 
-      // If there is no QuestionnaireReturnedId value
-      // a Questionnaire Return must be created first
-      // so we call a createreturn event.
-      if(!this.QuestionnaireReturnedId) {
-         // Prevents the anchor element from navigating to a URL.
-        event.preventDefault();
+    // If there is no QuestionnaireReturnedId value
+    // a Questionnaire Return must be created first
+    // so we call a createreturn event.
+    if(!this.QuestionnaireReturnedId) {
+       // Prevents the anchor element from navigating to a URL.
+      event.preventDefault();
 
-        // Boolean used to create the answer once the Return record is created.
-        this.createAnswerRecord = true;
+      // Boolean used to create the answer once the Return record is created.
+      this.createAnswerRecord = true;
 
-        // Creates the event with the questionnaire ID data.
-        // sending a selected event
-        const selectedEvent = new CustomEvent('createreturn', { 
-            questionId: this.questionId
-         });
+      // Creates the event with the questionnaire ID data.
+      // sending a selected event
+      const selectedEvent = new CustomEvent('createreturn', { 
+          questionId: this.questionId
+       });
 
-        // Dispatches the event.
-        this.dispatchEvent(selectedEvent);
+      // Dispatches the event.
+      this.dispatchEvent(selectedEvent);
 
 
-      } else {
-         // Questionnaire Return record already exists
-         // so the Answer record can be created or updated
-         this.processQuestionnaireAnswerRecord();
-      }
-   }
+    } else {
+       // Questionnaire Return record already exists
+       // so the Answer record can be created or updated
+       this.processQuestionnaireAnswerRecord();
+    }
+ }
 
+   processQuestionnaireAnswerRecord() {
+    if(!this.questionAnswerId) {
+        console.log('create answer');
+      this.createQuestionnaireAnswer();
+    } else {
+      this.updateQuestionnaireAnswer();
+    }         
+ }
 
    createQuestionnaireAnswer() {
       const fields = {};
+      console.log('create answer');
+
+      console.log('this.QuestionnaireReturnedId: ' + this.QuestionnaireReturnedId);
       fields[QUESTIONNAIRE_RETURNED_FIELD.fieldApiName] = this.QuestionnaireReturnedId;
       fields[QUESTIONNAIRE_QUESTION_FIELD.fieldApiName] = this.QuestionnaireQuestionId;
       fields[AGREE_WITH_QUESTION_FIELD.fieldApiName] = this.answerValue;
@@ -153,13 +167,12 @@ export default class QuestionnaireAnswer extends LightningElement {
       createRecord(recordInput)
             .then(QuestionnaireAns => {
                 this.questionAnswerId = QuestionnaireAns.id;
-                this.Questionnaire_Answer__c = QuestionnaireAns;
+                this.Questionnaire_Answer__c = QuestionnaireAns;   
 
-               // LAST PIECE TO EXPLAIN - Updating the initial JSON
-               // Creates the event with the new questionnaire Return ID
                // sending an update event to the parent questionnaireList component
-               console.log('Creating Answer ==> updating list');
-               const updateEvent = new CustomEvent('updatequestionnaire', { 
+               console.log('Creating Answer ==> updating list 1');
+
+               const updateEvent = new CustomEvent('updatequestionnairelist', { 
                   detail: {
                      operation: 'New Answer',
                      questionID : this.QuestionnaireQuestionId,
@@ -167,8 +180,10 @@ export default class QuestionnaireAnswer extends LightningElement {
                   },
                   bubbles: true
                });        
+               console.log('Creating Answer ==> updating list 2');
                // Dispatches the event.
-               this.dispatchEvent(updateEvent);     
+               this.dispatchEvent(updateEvent);  
+               console.log('Creating Answer ==> updating list 3');
 
                 this.dispatchEvent(
                     new ShowToastEvent({
@@ -220,14 +235,4 @@ export default class QuestionnaireAnswer extends LightningElement {
           
     }
 
-
-   get options() {
-      return [
-             {'label': 'Strongly Disagree', 'value': 'Strongly Disagree'},
-             {'label': 'Disagree', 'value': 'Disagree'},
-             {'label': 'Undecided', 'value': 'Undecided'},
-             {'label': 'Agree', 'value': 'Agree'},
-             {'label': 'Strongly Agree', 'value': 'Strongly Agree'}
-      ];
-   }
 }

@@ -32,14 +32,14 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default",
         {
+            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default",
             "isDirectory": true,
-            "size": 416,
-            "modifiedTime": 1551307032000,
-            "changeTime": 1551305170813,
-            "contentHash": "dab575e04b4a99d71f3108538ddfa9eb9f7f748a",
             "isMetadataFile": false,
-            "state": "u"
+            "size": 352,
+            "modifiedTime": 1551307032000,
+            "changeTime": 1551478176706,
+            "contentHash": "f071a04110a7c8155f95118ffec0e76c4922a656"
         }
     ],
     [
@@ -213,7 +213,7 @@
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/profiles",
             "isDirectory": true,
             "size": 192,
-            "modifiedTime": 1551305176000,
+            "modifiedTime": 1551305175000,
             "changeTime": 1549438188386,
             "contentHash": "9c367b0e719eb8c48c5b0d9cbfb5f580a4bd6717",
             "isMetadataFile": false,
@@ -286,7 +286,7 @@
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/settings",
             "isDirectory": true,
             "size": 96,
-            "modifiedTime": 1549438188000,
+            "modifiedTime": 1549438186000,
             "changeTime": 1549438188122,
             "contentHash": "51a767161ecb76df77be39042e42cbb2d91005fb",
             "isMetadataFile": false,
@@ -316,7 +316,7 @@
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/tabs",
             "isDirectory": true,
             "size": 96,
-            "modifiedTime": 1549438188000,
+            "modifiedTime": 1549438186000,
             "changeTime": 1549438188121,
             "contentHash": "83822c6970541b5403c3c9f56ec00e639ea34a7b",
             "isMetadataFile": false,
@@ -985,15 +985,15 @@
     [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnaireAnswer/questionnaireAnswer.js",
         {
-            "state": "u",
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/questionnaires/lwc/questionnaireAnswer/questionnaireAnswer.js",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 8646,
-            "modifiedTime": 1551477392342,
+            "modifiedTime": 1551477561510,
             "changeTime": 1551477392342,
-            "isWorkspace": false,
-            "contentHash": "095a7dfc4b4e0f3d7d563b33f267bfc522716511"
+            "contentHash": "095a7dfc4b4e0f3d7d563b33f267bfc522716511",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
         }
     ],
     [
@@ -1843,269 +1843,9 @@
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/layouts",
             "isDirectory": true,
             "size": 96,
-            "modifiedTime": 1549627098000,
+            "modifiedTime": 1549627097000,
             "changeTime": 1549627094302,
             "contentHash": "3f5b14f16a19a0ac8214f60795352da9dac569ad",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ.resource-meta.xml",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ.resource-meta.xml",
-            "isDirectory": false,
-            "size": 352,
-            "modifiedTime": 1550698230874,
-            "changeTime": 1550698230874,
-            "contentHash": "e77fe3ffd564ba34327fe0e69a19c38b114537a2",
-            "isMetadataFile": true,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/MIT-LICENSE.txt",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/MIT-LICENSE.txt",
-            "isDirectory": false,
-            "size": 1091,
-            "modifiedTime": 1550698230892,
-            "changeTime": 1550698230892,
-            "contentHash": "a6a80223252c5db4dd15f7bba117909a7200db63",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/README.md",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/README.md",
-            "isDirectory": false,
-            "size": 799,
-            "modifiedTime": 1550698230892,
-            "changeTime": 1550698230892,
-            "contentHash": "af794b53fac2c9d395c4b4bd6c71928ca4d039bc",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/bower.json",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/bower.json",
-            "isDirectory": false,
-            "size": 842,
-            "modifiedTime": 1550698230892,
-            "changeTime": 1550698230892,
-            "contentHash": "f30fce3554eb405521bacff7ffa69e443aa00571",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/jsonQ.js",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/jsonQ.js",
-            "isDirectory": false,
-            "size": 38434,
-            "modifiedTime": 1550698230893,
-            "changeTime": 1550698230893,
-            "contentHash": "99668d5b3824b7dd9a7833402f5df497a497350c",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/jsonQ.min.js",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/jsonQ.min.js",
-            "isDirectory": false,
-            "size": 11643,
-            "modifiedTime": 1550698230893,
-            "changeTime": 1550698230893,
-            "contentHash": "4a2ae11aef93b7b6283542f2298d233556623ba5",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/package.json",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/package.json",
-            "isDirectory": false,
-            "size": 744,
-            "modifiedTime": 1550698230893,
-            "changeTime": 1550698230893,
-            "contentHash": "14eff3352a4b55d128f275d46a88b04d267c2c22",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/css/qunit.css",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/css/qunit.css",
-            "isDirectory": false,
-            "size": 4668,
-            "modifiedTime": 1550698230894,
-            "changeTime": 1550698230894,
-            "contentHash": "91755900854395cb431d0bbb83c1e3a0198024d1",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/index.html",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/index.html",
-            "isDirectory": false,
-            "size": 9497,
-            "modifiedTime": 1550698230894,
-            "changeTime": 1550698230894,
-            "contentHash": "55cc72b8e377bebd463713a811d66242320f8339",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/js/qunit.js",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/js/qunit.js",
-            "isDirectory": false,
-            "size": 58797,
-            "modifiedTime": 1550698230895,
-            "changeTime": 1550698230895,
-            "contentHash": "41600c697bcc4abec67b9b674a2009969f7857bd",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/js/test.js",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/js/test.js",
-            "isDirectory": false,
-            "size": 37722,
-            "modifiedTime": 1550698230895,
-            "changeTime": 1550698230895,
-            "contentHash": "90445269f7703fabfcc71a0db556912cadd5d145",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/test.xml",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/test.xml",
-            "isDirectory": false,
-            "size": 2874,
-            "modifiedTime": 1550698230896,
-            "changeTime": 1550698230896,
-            "contentHash": "700285a50c6adbba62f8fa136c54b5c84f52ed95",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources",
-            "isDirectory": true,
-            "size": 128,
-            "modifiedTime": 1550698236000,
-            "changeTime": 1550698230891,
-            "contentHash": "998199441f16efe189897da679721392a3c57ebf",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master",
-            "isDirectory": true,
-            "size": 288,
-            "modifiedTime": 1550698236000,
-            "changeTime": 1550698230893,
-            "contentHash": "afc2e8586d00a2c0f91deab3b44dfcb859a827fc",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ",
-            "isDirectory": true,
-            "size": 96,
-            "modifiedTime": 1550698236000,
-            "changeTime": 1550698230891,
-            "contentHash": "8dcf27bea5baee782110c98604ec5962b71e5f25",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/css",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/css",
-            "isDirectory": true,
-            "size": 96,
-            "modifiedTime": 1550698234000,
-            "changeTime": 1550698230894,
-            "contentHash": "a13b65f45c90c94f4e7c474171fdae9de2c95c94",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test",
-            "isDirectory": true,
-            "size": 192,
-            "modifiedTime": 1550698236000,
-            "changeTime": 1550698230896,
-            "contentHash": "4510969462a3c456b7043c0dcd8e707f03f2ecaa",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/js",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/staticresources/jsonQ/jsonQ-master/unit_test/js",
-            "isDirectory": true,
-            "size": 128,
-            "modifiedTime": 1550698234000,
-            "changeTime": 1550698230895,
-            "contentHash": "f5f76673b0d6d540b5b8a5a3acee1606482a5fb1",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/classes/smartSearchUtils.cls-meta.xml",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/classes/smartSearchUtils.cls-meta.xml",
-            "isDirectory": false,
-            "size": 174,
-            "modifiedTime": 1551305170771,
-            "changeTime": 1551305170771,
-            "contentHash": "ab3ac94968e57930b88820ab5438fa820ed36730",
-            "isMetadataFile": true,
-            "state": "u"
-        }
-    ],
-    [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/classes/smartSearchUtils.cls",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/classes/smartSearchUtils.cls",
-            "isDirectory": false,
-            "size": 5108,
-            "modifiedTime": 1551307030159,
-            "changeTime": 1551307030159,
-            "contentHash": "b72236f30793b44aae2e1dae010ae95c1a292e68",
             "isMetadataFile": false,
             "state": "u"
         }
@@ -2137,25 +1877,12 @@
         }
     ],
     [
-        "/Users/barryhughes/Documents/LWC Course/force-app/main/default/classes",
-        {
-            "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/classes",
-            "isDirectory": true,
-            "size": 128,
-            "modifiedTime": 1551307032000,
-            "changeTime": 1551305170772,
-            "contentHash": "e32348d3b093a5f218d5a7d249fb4faec51ced05",
-            "isMetadataFile": false,
-            "state": "u"
-        }
-    ],
-    [
         "/Users/barryhughes/Documents/LWC Course/force-app/main/default/remoteSiteSettings",
         {
             "sourcePath": "/Users/barryhughes/Documents/LWC Course/force-app/main/default/remoteSiteSettings",
             "isDirectory": true,
             "size": 128,
-            "modifiedTime": 1551305176000,
+            "modifiedTime": 1551305175000,
             "changeTime": 1551305170815,
             "contentHash": "fc1e256dfedbb63a2a953dc6627b31a6e2b96138",
             "isMetadataFile": false,
