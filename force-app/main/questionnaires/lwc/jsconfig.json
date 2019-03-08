@@ -4,7 +4,19 @@
         "baseUrl": ".",
         "paths": {
             "c/hello-world": [
-                "../../default/lwc/helloWorld/helloWorld.js"
+                "../../../../04. Completed Solution/main/default/lwc/helloWorld/helloWorld.js"
+            ],
+            "c/questionnaire-answer": [
+                "../../../../04. Completed Solution/main/questionnaires/lwc/questionnaireAnswer/questionnaireAnswer.js"
+            ],
+            "c/questionnaire-card": [
+                "../../../../04. Completed Solution/main/questionnaires/lwc/questionnaireCard/questionnaireCard.js"
+            ],
+            "c/questionnaire-list": [
+                "../../../../04. Completed Solution/main/questionnaires/lwc/questionnaireList/questionnaireList.js"
+            ],
+            "c/questionnaire-lwc": [
+                "../../../../04. Completed Solution/main/questionnaires/lwc/questionnaireLwc/questionnaireLwc.js"
             ]
         }
     },
