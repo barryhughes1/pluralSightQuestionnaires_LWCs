@@ -1,10 +1,13 @@
 import { LightningElement, track, api, wire } from 'lwc';
-import { getRecord } from 'lightning/uiRecordApi';
+import { getRecord, getFieldValue } from 'lightning/uiRecordApi';
+
+import QUESTIONNAIRE_NAME_FIELD from '@salesforce/schema/Questionnaire__c.Name';
+import QUESTIONNAIRE_DESCRIPTION_FIELD from '@salesforce/schema/Questionnaire__c.Description__c';
 
 const FIELDS = [
     'Questionnaire__c.Name',
     'Questionnaire__c.Description__c',
-    'Questionnaire__c.Total_Questions__c',
+//    'Questionnaire__c.Total_Questions__c',
 ];
 
 export default class QuestionnaireCard extends LightningElement {
@@ -25,8 +28,10 @@ export default class QuestionnaireCard extends LightningElement {
     questionnaireRecord(result) {
         if (result.data) {
             this.questionnaireRec = result.data;
-            this.name = this.questionnaireRec.fields.Name.value;
-            this.description = this.questionnaireRec.fields.Description__c.value;
+            this.name = getFieldValue(this.questionnaireRec, QUESTIONNAIRE_NAME_FIELD);
+            // this.name = this.questionnaireRec.fields.Name.value;
+            this.description = getFieldValue(this.questionnaireRec, QUESTIONNAIRE_DESCRIPTION_FIELD);
+            // this.description = this.questionnaireRec.fields.Description__c.value;
             this.status = this.questionnaire.questionnaireStatus;
             this.setCardTheme();
             this.setQuestionsAskedAndAnswered();

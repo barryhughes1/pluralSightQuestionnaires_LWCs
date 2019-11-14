@@ -7,6 +7,7 @@ import QUESTIONNAIRE_RETURNED_FIELD from '@salesforce/schema/Questionnaire_Answe
 import QUESTIONNAIRE_QUESTION_FIELD from '@salesforce/schema/Questionnaire_Answer__c.QuestionnaireQuestion__c';
 import AGREE_WITH_QUESTION_FIELD from '@salesforce/schema/Questionnaire_Answer__c.Agree_with_Question__c';
 import COMMENTS_FIELD from '@salesforce/schema/Questionnaire_Answer__c.Comments__c';
+import ID_FIELD from '@salesforce/schema/Questionnaire_Answer__c.Id';
 
 const QUESTION_FIELDS = [
    'Questionnaire_Question__c.Name',
@@ -205,14 +206,22 @@ export default class QuestionnaireAnswer extends LightningElement {
     }
 
     updateQuestionnaireAnswer() {
-      let record = {
+        const fields = {};
+        fields[ID_FIELD.fieldApiName] = this.questionAnswerId;
+        fields[AGREE_WITH_QUESTION_FIELD.fieldApiName] = this.answerValue;
+        fields[COMMENTS_FIELD.fieldApiName] = this.comments;
+        let record = {fields};         
+/*
+        let record = {
             fields: {
                 Id: this.questionAnswerId,
+                // [AGREE_WITH_QUESTION_FIELD]:this.answerValue,
                 Agree_with_Question__c:this.answerValue,
+                // [COMMENTS_FIELD]:this.comments,
                 Comments__c:this.comments,
             },
         };
-
+*/
         updateRecord(record)
             .then(() => {
                 this.dispatchEvent(

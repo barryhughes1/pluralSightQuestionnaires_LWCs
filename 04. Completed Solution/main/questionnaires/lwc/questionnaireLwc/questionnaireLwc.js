@@ -1,5 +1,5 @@
 import { LightningElement, track, api, wire } from 'lwc';
-import { getRecord, createRecord, updateRecord } from 'lightning/uiRecordApi';
+import { getRecord, createRecord, updateRecord, getFieldValue } from 'lightning/uiRecordApi';
 import Id from '@salesforce/user/Id';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import QUESTIONNAIRE_RETURNED_OBJECT from '@salesforce/schema/Questionnaire_Returned__c';
@@ -7,6 +7,7 @@ import QUESTIONNAIRE_FIELD from '@salesforce/schema/Questionnaire_Returned__c.Qu
 import SUBMITTED_FIELD from '@salesforce/schema/Questionnaire_Returned__c.Submitted__c';
 import TANDC_FIELD from '@salesforce/schema/Questionnaire_Returned__c.Terms_and_Conditions__c';
 import ANSWERED_BY_FIELD from '@salesforce/schema/Questionnaire_Returned__c.Answered_By__c';
+import ID_FIELD from '@salesforce/schema/Questionnaire_Returned__c.Id';
 
 const FIELDS = [
     'Questionnaire_Returned__c.Name',
@@ -131,15 +132,15 @@ export default class questionnaireLwc extends LightningElement {
     }
 
     updateQuestionnaireReturn() {
-        let record = {
-            fields: {
-                Id: this.questionnaireReturnedId,
-                Questionnaire__c: this.selectedQuestionnaireId,
-                Terms_and_Conditions__c:this.termsConditions,
-                Submitted__c:this.questionnaireSubmitted,
-                Answered_By__c:Id,
-            },
-        };
+        // Multiple pages - referential integrity #2 (@kevinv11n)
+        console.log('updateQuestionnaireReturn CALLED!!');
+        const fields = {};
+        fields[ID_FIELD.fieldApiName] = this.questionnaireReturnedId;
+        fields[QUESTIONNAIRE_FIELD.fieldApiName] = this.selectedQuestionnaireId;
+        fields[TANDC_FIELD.fieldApiName] = this.termsConditions;
+        fields[SUBMITTED_FIELD.fieldApiName] = this.questionnaireSubmitted;
+        fields[ANSWERED_BY_FIELD.fieldApiName] = Id;
+        let record = {fields};
         updateRecord(record)
             .then(() => {
                 this.dispatchEvent(
@@ -174,15 +175,14 @@ export default class questionnaireLwc extends LightningElement {
             );
 
         } else {
-            let record = {
-                fields: {
-                    Id: this.questionnaireReturnedId,
-                    Questionnaire__c: this.selectedQuestionnaireId,
-                    Terms_and_Conditions__c:this.termsConditions,
-                    Submitted__c:true,
-                    Answered_By__c:this.answeredBy,
-                },
-            };
+            // Multiple pages - referential integrity #2 (@kevinv11n)
+            const fields = {};
+            fields[ID_FIELD.fieldApiName] = this.questionnaireReturnedId;
+            fields[QUESTIONNAIRE_FIELD.fieldApiName] = this.selectedQuestionnaireId;
+            fields[TANDC_FIELD.fieldApiName] = this.termsConditions;
+            fields[SUBMITTED_FIELD.fieldApiName] = true;
+            fields[ANSWERED_BY_FIELD.fieldApiName] = this.answeredBy;
+            let record = {fields};            
             updateRecord(record)
                 .then(() => {
     
